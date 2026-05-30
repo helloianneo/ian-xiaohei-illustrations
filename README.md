@@ -113,7 +113,7 @@ Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中�
 克隆仓库：
 
 ```bash
-git clone https://github.com/404ll/ian-xiaohei-illustrations.git
+git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git
 cd ian-xiaohei-illustrations
 ```
 

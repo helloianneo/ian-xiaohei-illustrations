@@ -43,13 +43,7 @@ One image explains only one core structure. Keep the main subject around 40%-60%
 
 ## 默认小黑变量
 
-用户未提供自定义角色，或明确说“用默认小黑”时，用：
-
-```text
-character_name: 小黑
-character_prompt_phrase: a small solid-black absurd creature with white dot eyes, tiny thin legs, blank serious expression, slightly uneven hand-drawn body shape
-character_constraints: not cute, not a mascot, not children's cartoon, no complex clothing, no shiny eyes, not commercial, not overly round or polished
-```
+用户未提供自定义角色，或明确说“用默认小黑”时，从 `xiaohei-ip.md` 读取默认小黑设定，并整理成 `character_name`、`character_prompt_phrase` 和 `character_constraints` 后填入模板。不要在这里维护第二份默认角色定义。
 
 ## 图像编辑提示
 
@@ -60,6 +54,8 @@ Edit the provided image. Remove only the handwritten title "{要删除的文字}
 ```
 
 增强角色参与感：
+
+发送给图像模型前，先用当前角色卡替换 `{character_name}`。
 
 ```text
 Regenerate this illustration with the same core meaning and simple layout, but make {character_name} more central to the conceptual action. The character should be doing the strange work that explains the idea, not standing beside the diagram. Keep it clean, sparse, hand-drawn, and not cute.
