@@ -276,18 +276,15 @@ ian-xiaohei-illustrations/
 
 ---
 
-## 下一步
+## 继续探索
 
-如果你想继续看我在 AI 和一人公司方向的探索，可以看这两个入口：
+这套小黑配图 Skill，只是我用 AI 搭建个人生产系统里的一个小工具。
 
-- **看见信号：AI 开眼日报**
-  持续筛选 AI 世界里和个人生意有关的产品、工具、工作流和内容机会。
+如果你也在用 AI 做内容、知识库、工作流或产品化，可以继续看我的网站：[ianneo.xyz](https://www.ianneo.xyz/)。
 
-- **进入现场：Indie Builders Club**
-  一个一起推进项目的圈子。你可以带着想法、页面、内容、课程、服务或半成品进来，一起看、一起改、一起往前推。圈子里也包含 AI × 一人公司知识库，工具、案例、模板和工作流会持续更新。
+只想先观察，可以关注我的 [X/Twitter](https://x.com/ianneo_ai)。
 
-如果只是想先观察，可以关注我的 [X/Twitter](https://x.com/ianneo_ai)。
-如果想加入 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
+想了解 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
 
 <p>
   <img src="assets/ian-wechat-qr.jpg" alt="Ian 微信二维码" width="120">
