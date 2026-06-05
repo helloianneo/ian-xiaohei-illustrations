@@ -132,6 +132,21 @@ Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑�
 
 ---
 
+## 在 Claude Code 使用
+
+这个 skill 的格式（`SKILL.md` frontmatter + `references/` 渐进式参考）和 Anthropic 的 Agent Skills 完全兼容，所以除了 Codex，它也能装进 Claude Code：
+
+```bash
+# 个人 scope（所有项目可用）
+cp -R ./ian-xiaohei-illustrations "$HOME/.claude/skills/ian-xiaohei-illustrations"
+```
+
+唯一的平台差异是生图那一步：现在它是**工具无关**的——有 Codex 内置 `image_gen` 就用它（最稳，能改图）；有图像生成 MCP（例如 Claude 的 `mcp__image-gen__generate_image`，设 16:9 / png）就用它；两者都没有时，就为每张图输出可直接粘贴的提示词。**小黑 IP、风格 DNA、构图规则、工作流完全不变。**
+
+视觉风格本身与语言无关（`references/prompt-template.md` 的 Visual DNA 已经是英文），所以也能生成英文标注的配图。注意：Flux 类纯文生图模型画中文字较弱，这种后端上英文标注反而更稳。
+
+---
+
 ## 怎么用
 
 ### 只做配图规划

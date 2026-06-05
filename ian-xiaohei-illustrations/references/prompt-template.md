@@ -38,6 +38,8 @@ One image explains only one core structure. Keep the main subject around 40%-60%
 
 ## 图像编辑提示
 
+> ⚠️ 以下编辑提示需要支持「输入图片再修改」（inpaint / edit）的工具，例如 Codex 的 `image_gen`。纯文生图 MCP（如 Flux / `mcp__image-gen__generate_image`）做不到——这时改用「减少标注词后重新生成」，或一开始就在生图提示词里写明 "no title in the top-left corner"，从源头避免标题。
+
 去掉左上角标题：
 
 ```text
