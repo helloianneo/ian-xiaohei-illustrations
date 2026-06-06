@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ian Xiaohei Illustrations EN"
+  short_description: "Generate clean, strange, hand-drawn English article illustrations with Ian's Xiaohei character."
+  default_prompt: "Use $ian-xiaohei-illustrations-en to design and generate a few Xiaohei-style illustrations for this English article."
+policy:
+  allow_implicit_invocation: true
