@@ -130,6 +130,30 @@ cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑怪诞正文配图。
 ```
 
+### English variant / 英文版本
+
+This repository also includes an optional English-language adaptation:
+
+```text
+ian-xiaohei-illustrations-en/
+```
+
+It keeps Ian's Xiaohei visual language, white-background hand-drawn style, sparse red/orange/blue notes, and non-PPT editorial illustration workflow, but switches the skill instructions and generated handwritten labels to English.
+
+To install the English variant:
+
+```bash
+cp -R ./ian-xiaohei-illustrations-en "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+Use it in Codex:
+
+```text
+Use $ian-xiaohei-illustrations-en to generate one Xiaohei-style English article illustration about a workflow bottleneck.
+```
+
+This adaptation is attributed to Ian and the original `Ian Xiaohei Illustrations` project. The bundled examples remain style calibration references, not composition templates.
+
 ---
 
 ## 怎么用
@@ -201,7 +225,7 @@ Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流�
 │   │   ├── 02-sort-by-purpose.png
 │   │   └── ...
 │   └── prompts.md
-└── ian-xiaohei-illustrations/
+├── ian-xiaohei-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
@@ -213,12 +237,20 @@ Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流�
         ├── composition-patterns.md
         ├── prompt-template.md
         └── qa-checklist.md
+└── ian-xiaohei-illustrations-en/
+    ├── SKILL.md
+    ├── agents/
+    │   └── openai.yaml
+    └── references/
+        ├── prompt-template.md
+        └── qa-checklist.md
 ```
 
 真正需要安装到 Codex 的是子目录：
 
 ```text
 ian-xiaohei-illustrations/
+ian-xiaohei-illustrations-en/
 ```
 
 根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
