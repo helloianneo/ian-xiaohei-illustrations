@@ -1,33 +1,80 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Stegosaurus: Plated dinosaur with back plates and tail spikes -->
-  <g stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Body -->
-    <ellipse cx="100" cy="105" rx="48" ry="35"/>
-    <!-- Neck -->
-    <path d="M 140 95 L 160 80"/>
-    <!-- Head -->
-    <circle cx="170" cy="70" r="15"/>
+<svg viewBox="0 0 200 260" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <!-- Stegosaurus: Plated dinosaur with distinctive back plates -->
+  <defs>
+    <style>
+      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dino-body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .plate { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Back legs (sturdy) -->
+    <ellipse cx="75" cy="170" rx="14" ry="35" class="dino-body"/>
+    <ellipse cx="115" cy="170" rx="14" ry="35" class="dino-body"/>
+    
+    <!-- Feet -->
+    <ellipse cx="72" cy="212" rx="12" ry="10" class="dino-body"/>
+    <ellipse cx="118" cy="212" rx="12" ry="10" class="dino-body"/>
+    
+    <!-- Front legs (shorter) -->
+    <ellipse cx="85" cy="155" rx="11" ry="28" class="dino-body"/>
+    <ellipse cx="120" cy="155" rx="11" ry="28" class="dino-body"/>
+    
+    <!-- Front feet -->
+    <ellipse cx="83" cy="188" rx="10" ry="8" class="dino-body"/>
+    <ellipse cx="122" cy="188" rx="10" ry="8" class="dino-body"/>
+    
+    <!-- Body (rounded, herbivore) -->
+    <ellipse cx="100" cy="115" rx="52" ry="45" class="dino-body"/>
+    
+    <!-- Neck (angled down for feeding) -->
+    <path d="M 130 100 Q 155 90 168 70" class="dino-body" stroke-width="2.2"/>
+    
+    <!-- Head (small for herbivore) -->
+    <circle cx="175" cy="58" r="14" class="dino-body"/>
+    
+    <!-- Snout -->
+    <ellipse cx="183" cy="62" rx="8" ry="6" class="dino-body"/>
+    
     <!-- Eye -->
-    <circle cx="175" cy="68" r="2" fill="#000"/>
-    <!-- Mouth -->
-    <path d="M 175 75 L 180 78"/>
-    <!-- Back plates (distinctive feature) -->
-    <path d="M 70 65 L 65 35" stroke-width="3"/>
-    <path d="M 85 55 L 80 25" stroke-width="3"/>
-    <path d="M 100 50 L 100 15" stroke-width="3"/>
-    <path d="M 115 55 L 120 25" stroke-width="3"/>
-    <path d="M 130 65 L 135 35" stroke-width="3"/>
-    <!-- Tail with spikes -->
-    <path d="M 52 110 Q 35 115 25 130"/>
-    <!-- Tail spikes -->
-    <line x1="30" y1="128" x2="25" y2="140"/>
-    <line x1="28" y1="131" x2="20" y2="145"/>
-    <line x1="26" y1="133" x2="15" y2="148"/>
-    <!-- Back legs -->
-    <path d="M 85 138 L 82 172"/>
-    <path d="M 115 138 L 118 172"/>
-    <!-- Front legs -->
-    <path d="M 95 138 L 92 165"/>
-    <path d="M 105 138 L 108 165"/>
+    <circle cx="178" cy="54" r="2" fill="#000"/>
+    
+    <!-- Nostril -->
+    <circle cx="188" cy="62" r="1.2" fill="#000"/>
+    
+    <!-- Tail (long, with spikes at end) -->
+    <path d="M 48 120 Q 30 125 15 145 Q 10 160 8 180" class="dino-body" stroke-width="2.2"/>
+    
+    <!-- Four tail spikes (distinctive feature) -->
+    <line x1="12" y1="178" x2="2" y2="195" class="dino-outline" stroke-width="2.2"/>
+    <line x1="15" y1="180" x2="8" y2="200" class="dino-outline" stroke-width="2.2"/>
+    <line x1="18" y1="178" x2="14" y2="200" class="dino-outline" stroke-width="2.2"/>
+    <line x1="20" y1="175" x2="20" y2="198" class="dino-outline" stroke-width="2.2"/>
+    
+    <!-- DISTINCTIVE BACK PLATES (main feature) -->
+    <!-- Row of plates along the spine -->
+    <!-- Plate 1 (small, front) -->
+    <path d="M 65 75 L 62 40 L 72 45 L 70 80" class="plate" stroke-width="2"/>
+    
+    <!-- Plate 2 -->
+    <path d="M 80 65 L 75 25 L 88 28 L 87 75" class="plate" stroke-width="2.2"/>
+    
+    <!-- Plate 3 (largest, middle) -->
+    <path d="M 100 60 L 98 10 L 115 15 L 115 70" class="plate" stroke-width="2.4"/>
+    
+    <!-- Plate 4 -->
+    <path d="M 120 65 L 122 28 L 135 25 L 130 75" class="plate" stroke-width="2.2"/>
+    
+    <!-- Plate 5 (small, back) -->
+    <path d="M 135 75 L 140 45 L 148 40 L 142 80" class="plate" stroke-width="2"/>
+    
+    <!-- Plate details/ridges -->
+    <line x1="70" y1="45" x2="75" y2="42" class="dino-outline" stroke-width="1"/>
+    <line x1="88" y1="30" x2="90" y2="28" class="dino-outline" stroke-width="1"/>
+    <line x1="110" y1="18" x2="108" y2="15" class="dino-outline" stroke-width="1"/>
+    
+    <!-- Muscle definition -->
+    <path d="M 70 105 Q 75 95 85 100" class="dino-outline" stroke-width="1"/>
   </g>
 </svg>

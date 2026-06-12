@@ -1,34 +1,85 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Pteranodon: Flying reptile with large crest and wings -->
-  <g stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Body (small) -->
-    <ellipse cx="80" cy="120" rx="20" ry="18"/>
-    <!-- Head -->
-    <circle cx="95" cy="100" r="12"/>
-    <!-- Large crest (distinctive feature) -->
-    <path d="M 100 90 Q 115 80 125 75 Q 120 85 110 95" stroke-width="2.5"/>
-    <!-- Crest outline -->
-    <path d="M 100 88 Q 120 78 128 72"/>
-    <!-- Eye -->
-    <circle cx="98" cy="98" r="1.5" fill="#000"/>
-    <!-- Mouth/beak -->
-    <line x1="105" y1="100" x2="115" y2="98"/>
-    <!-- Left wing (membrane) -->
-    <path d="M 80 115 Q 40 100 30 80 Q 35 90 50 105"/>
-    <path d="M 78 118 Q 50 110 40 95"/>
-    <!-- Right wing (membrane) -->
-    <path d="M 80 115 Q 120 100 130 80 Q 125 90 110 105"/>
-    <path d="M 82 118 Q 110 110 120 95"/>
-    <!-- Tail (stabilizer) -->
-    <path d="M 70 130 Q 50 140 40 155"/>
-    <!-- Back legs (small) -->
-    <path d="M 75 135 L 73 155"/>
-    <path d="M 85 135 L 87 155"/>
-    <!-- Claws on legs -->
-    <line x1="73" y1="155" x2="70" y2="162"/>
-    <line x1="87" y1="155" x2="90" y2="162"/>
-    <!-- Wing detail lines -->
-    <line x1="75" y1="120" x2="50" y2="105"/>
-    <line x1="85" y1="120" x2="110" y2="105"/>
+<svg viewBox="0 0 220 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <!-- Pteranodon: Flying reptile with wings and crest -->
+  <defs>
+    <style>
+      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dino-body { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
+      .wing { stroke: #000; stroke-width: 1.5; fill: #f5f5f0; }
+      .crest { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Body (small, compact for flying) -->
+    <ellipse cx="80" cy="120" rx="22" ry="20" class="dino-body"/>
+    
+    <!-- Chest (muscular for wing support) -->
+    <path d="M 65 115 Q 70 105 78 110" class="dino-outline" stroke-width="1"/>
+    
+    <!-- Head (small, pointed) -->
+    <ellipse cx="95" cy="95" rx="13" ry="14" class="dino-body"/>
+    
+    <!-- Pointed snout (for catching fish) -->
+    <path d="M 105 92 L 118 90" class="dino-outline" stroke-width="1.5"/>
+    <path d="M 105 98 L 118 100" class="dino-outline" stroke-width="1.2"/>
+    
+    <!-- Eye (forward-facing) -->
+    <circle cx="100" cy="91" r="1.8" fill="#000"/>
+    
+    <!-- Nostril -->
+    <circle cx="110" cy="95" r="1" fill="#000"/>
+    
+    <!-- LARGE CURVED CREST (distinctive feature) -->
+    <!-- Crest structure (backward curved) -->
+    <path d="M 100 85 Q 120 70 135 65 Q 140 65 142 75 Q 138 85 120 90 Q 105 92 100 88" class="crest" stroke-width="2.2"/>
+    
+    <!-- Crest outline/detail -->
+    <path d="M 102 84 Q 122 68 138 62" class="dino-outline" stroke-width="1.5"/>
+    
+    <!-- Crest ridges -->
+    <line x1="108" y1="80" x2="115" y2="65" class="dino-outline" stroke-width="1"/>
+    <line x1="120" y1="76" x2="130" y2="60" class="dino-outline" stroke-width="1"/>
+    <line x1="132" y1="73" x2="140" y2="62" class="dino-outline" stroke-width="1"/>
+    
+    <!-- LEFT WING (main feature) -->
+    <!-- Wing membrane (large pterosaur wing) -->
+    <path d="M 75 115 Q 45 100 25 95 Q 15 93 12 105 Q 20 110 40 115 Q 60 120 75 125" class="wing" stroke-width="1.8"/>
+    
+    <!-- Wing support structure -->
+    <path d="M 73 120 Q 50 110 30 107" class="dino-outline" stroke-width="1.2"/>
+    <path d="M 72 115 Q 40 100 18 95" class="dino-outline" stroke-width="1.2"/>
+    
+    <!-- Wing finger (wing support bone) -->
+    <line x1="75" y1="115" x2="20" y2="92" class="dino-outline" stroke-width="1.5"/>
+    
+    <!-- RIGHT WING -->
+    <!-- Wing membrane -->
+    <path d="M 85 115 Q 115 100 135 95 Q 145 93 148 105 Q 140 110 120 115 Q 100 120 85 125" class="wing" stroke-width="1.8"/>
+    
+    <!-- Wing support structure -->
+    <path d="M 87 120 Q 110 110 130 107" class="dino-outline" stroke-width="1.2"/>
+    <path d="M 88 115 Q 120 100 142 95" class="dino-outline" stroke-width="1.2"/>
+    
+    <!-- Wing finger (wing support bone) -->
+    <line x1="85" y1="115" x2="140" y2="92" class="dino-outline" stroke-width="1.5"/>
+    
+    <!-- Tail (rudder for flying) -->
+    <path d="M 70 130 Q 55 145 45 165" class="dino-body" stroke-width="1.8"/>
+    
+    <!-- Tail tip/fin -->
+    <path d="M 45 165 Q 40 175 50 175 Q 55 170 50 162" class="dino-body" stroke-width="1.5"/>
+    
+    <!-- Hind legs (very small for pterosaurs) -->
+    <ellipse cx="75" cy="135" rx="7" ry="18" class="dino-body"/>
+    <ellipse cx="85" cy="135" rx="7" ry="18" class="dino-body"/>
+    
+    <!-- Small feet -->
+    <ellipse cx="73" cy="158" rx="6" ry="5" class="dino-body"/>
+    <ellipse cx="87" cy="158" rx="6" ry="5" class="dino-body"/>
+    
+    <!-- Claws on feet -->
+    <line x1="70" y1="158" x2="65" y2="168" class="dino-outline" stroke-width="1.2"/>
+    <line x1="76" y1="160" x2="78" y2="170" class="dino-outline" stroke-width="1.2"/>
+    <line x1="90" y1="160" x2="92" y2="170" class="dino-outline" stroke-width="1.2"/>
   </g>
 </svg>

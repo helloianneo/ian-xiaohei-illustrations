@@ -1,36 +1,82 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Ankylosaurus: Armored dinosaur with bony plates and spikes -->
-  <g stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Armored body -->
-    <ellipse cx="100" cy="105" rx="50" ry="32"/>
-    <!-- Armor plates on back -->
-    <rect x="75" y="70" width="8" height="12" rx="2"/>
-    <rect x="88" y="65" width="8" height="14" rx="2"/>
-    <rect x="101" y="63" width="8" height="15" rx="2"/>
-    <rect x="114" y="65" width="8" height="14" rx="2"/>
-    <rect x="127" y="70" width="8" height="12" rx="2"/>
-    <!-- Head -->
-    <ellipse cx="145" cy="95" rx="18" ry="16"/>
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <!-- Ankylosaurus: Armored dinosaur with spikes -->
+  <defs>
+    <style>
+      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dino-body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .armor { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
+      .spike { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Back legs (short, sturdy) -->
+    <ellipse cx="75" cy="170" rx="13" ry="32" class="dino-body"/>
+    <ellipse cx="110" cy="170" rx="13" ry="32" class="dino-body"/>
+    
+    <!-- Feet -->
+    <ellipse cx="73" cy="208" rx="11" ry="9" class="dino-body"/>
+    <ellipse cx="112" cy="208" rx="11" ry="9" class="dino-body"/>
+    
+    <!-- Front legs (short, sturdy) -->
+    <ellipse cx="70" cy="155" rx="12" ry="28" class="dino-body"/>
+    <ellipse cx="110" cy="155" rx="12" ry="28" class="dino-body"/>
+    
+    <!-- Front feet -->
+    <ellipse cx="68" cy="188" rx="10" ry="8" class="dino-body"/>
+    <ellipse cx="112" cy="188" rx="10" ry="8" class="dino-body"/>
+    
+    <!-- Armored body (main feature) -->
+    <ellipse cx="90" cy="110" rx="50" ry="42" class="dino-body"/>
+    
+    <!-- Armor plates on back (row of hexagons/circles) -->
+    <circle cx="65" cy="80" r="6" class="armor"/>
+    <circle cx="75" cy="72" r="7" class="armor"/>
+    <circle cx="88" cy="68" r="8" class="armor"/>
+    <circle cx="102" cy="67" r="8" class="armor"/>
+    <circle cx="115" cy="72" r="7" class="armor"/>
+    <circle cx="125" cy="80" r="6" class="armor"/>
+    
+    <!-- Armor plate details -->
+    <circle cx="65" cy="80" r="4" class="dino-outline"/>
+    <circle cx="75" cy="72" r="5" class="dino-outline"/>
+    <circle cx="88" cy="68" r="6" class="dino-outline"/>
+    <circle cx="102" cy="67" r="6" class="dino-outline"/>
+    <circle cx="115" cy="72" r="5" class="dino-outline"/>
+    <circle cx="125" cy="80" r="4" class="dino-outline"/>
+    
+    <!-- Neck (short, armored) -->
+    <path d="M 125 100 Q 140 95 150 85" class="dino-body" stroke-width="2.2"/>
+    
+    <!-- Head (small, beak-like for herbivore) -->
+    <ellipse cx="158" cy="75" rx="14" ry="12" class="dino-body"/>
+    
+    <!-- Beak/mouth -->
+    <ellipse cx="168" cy="78" rx="6" ry="5" class="dino-body"/>
+    
     <!-- Eye -->
-    <circle cx="150" cy="92" r="1.5" fill="#000"/>
-    <!-- Beak-like mouth -->
-    <path d="M 155 95 L 162 93"/>
-    <!-- Spikes on head -->
-    <line x1="150" y1="80" x2="148" y2="65"/>
-    <line x1="158" y1="80" x2="162" y2="62"/>
-    <!-- Back legs (short and sturdy) -->
-    <path d="M 85 135 L 82 170"/>
-    <path d="M 115 135 L 118 170"/>
-    <!-- Front legs (short and sturdy) -->
-    <path d="M 95 135 L 93 165"/>
-    <path d="M 105 135 L 107 165"/>
-    <!-- Tail with club -->
-    <path d="M 50 105 Q 30 110 15 120"/>
-    <!-- Tail club (bony weapon) -->
-    <circle cx="12" cy="123" r="6"/>
+    <circle cx="162" cy="70" r="1.8" fill="#000"/>
+    
+    <!-- Nostril -->
+    <circle cx="172" cy="76" r="1" fill="#000"/>
+    
+    <!-- Defensive side spikes (along body) -->
+    <line x1="65" y1="120" x2="50" y2="135" class="spike" stroke-width="2"/>
+    <line x1="65" y1="130" x2="48" y2="150" class="spike" stroke-width="2"/>
+    <line x1="115" y1="130" x2="132" y2="150" class="spike" stroke-width="2"/>
+    <line x1="115" y1="120" x2="130" y2="135" class="spike" stroke-width="2"/>
+    
+    <!-- Tail club (signature weapon) -->
+    <path d="M 40 115 Q 25 120 10 135" class="dino-body" stroke-width="2.2"/>
+    
+    <!-- Club head (bony knob at tail end) -->
+    <circle cx="6" cy="138" r="10" class="dino-body" stroke-width="2.2"/>
+    <circle cx="6" cy="138" r="7" class="dino-outline" stroke-width="1.2"/>
+    
     <!-- Club spikes -->
-    <line x1="10" y1="118" x2="8" y2="110"/>
-    <line x1="15" y1="117" x2="18" y2="108"/>
-    <line x1="15" y1="129" x2="18" y2="138"/>
+    <line x1="2" y1="130" x2="-5" y2="118" class="spike" stroke-width="1.8"/>
+    <line x1="8" y1="127" x2="16" y2="112" class="spike" stroke-width="1.8"/>
+    <line x1="12" y1="145" x2="22" y2="160" class="spike" stroke-width="1.8"/>
+    <line x1="2" y1="148" x2="-8" y2="160" class="spike" stroke-width="1.8"/>
   </g>
 </svg>
