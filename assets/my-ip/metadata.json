@@ -1,0 +1,22 @@
+{
+  "name": "My IP Name",
+  "slug": "my-ip",
+  "author": "Your Name or Company <email@example.com>",
+  "year": 2026,
+  "contact": "email@example.com",
+  "description": "Primary visual IP for article illustrations. Minimal hand-drawn silhouette, participates in core actions.",
+  "recommended_usage": "Use as the primary character occupying the core action in each image. Keep line weight and minimal color accents consistent with project style.",
+  "image_sizes": {
+    "preview": "1600x900",
+    "final": "3840x2160"
+  },
+  "assets": {
+    "images": "images/",
+    "svgs": "svgs/",
+    "thumbnails": "thumbnails/"
+  },
+  "license": "CC-BY-NC-4.0",
+  "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+  "restrictions": "Non-commercial use only. Contact author for commercial licensing.",
+  "notes": "Do not alter head silhouette or core facial proportions. Keep accent colors to small red/orange/blue annotations only."
+}
