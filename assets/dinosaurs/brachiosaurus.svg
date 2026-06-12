@@ -1,67 +1,53 @@
 <svg viewBox="0 0 240 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Brachiosaurus: Giant sauropod with long neck -->
   <defs>
     <style>
-      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .dino-body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .limb { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
     </style>
   </defs>
   
   <g>
-    <!-- Tail (long, for balance) -->
-    <path d="M 60 110 Q 40 105 20 120 Q 10 135 15 150" class="dino-body" stroke-width="2.2"/>
+    <!-- Tail -->
+    <path d="M 60 110 Q 40 105 15 125" fill="none" stroke="#000" stroke-width="2.2"/>
+    <ellipse cx="12" cy="128" rx="6" ry="5" class="body"/>
     
-    <!-- Back legs (shorter, sturdy) -->
-    <ellipse cx="50" cy="160" rx="16" ry="38" class="dino-body"/>
-    <ellipse cx="80" cy="160" rx="16" ry="38" class="dino-body"/>
+    <!-- Back legs (shorter) -->
+    <ellipse cx="55" cy="165" rx="15" ry="35" class="limb"/>
+    <ellipse cx="90" cy="165" rx="15" ry="35" class="limb"/>
     
     <!-- Back feet -->
-    <ellipse cx="47" cy="205" rx="13" ry="10" class="dino-body"/>
-    <ellipse cx="83" cy="205" rx="13" ry="10" class="dino-body"/>
+    <ellipse cx="52" cy="208" rx="12" ry="9" class="body"/>
+    <ellipse cx="93" cy="208" rx="12" ry="9" class="body"/>
     
-    <!-- Front legs (MUCH longer - distinctive feature) -->
-    <ellipse cx="130" cy="135" rx="18" ry="50" class="dino-body"/>
-    <ellipse cx="165" cy="135" rx="18" ry="50" class="dino-body"/>
+    <!-- Body -->
+    <ellipse cx="85" cy="105" rx="50" ry="45" class="body"/>
     
-    <!-- Front feet (large) -->
-    <ellipse cx="127" cy="195" rx="14" ry="11" class="dino-body"/>
-    <ellipse cx="168" cy="195" rx="14" ry="11" class="dino-body"/>
+    <!-- Front legs (much longer - distinctive) -->
+    <ellipse cx="135" cy="140" rx="18" ry="50" class="limb"/>
+    <ellipse cx="175" cy="140" rx="18" ry="50" class="limb"/>
     
-    <!-- Body (massive, barrel-shaped) -->
-    <ellipse cx="95" cy="100" rx="56" ry="48" class="dino-body"/>
+    <!-- Front feet -->
+    <ellipse cx="133" cy="200" rx="14" ry="11" class="body"/>
+    <ellipse cx="177" cy="200" rx="14" ry="11" class="body"/>
     
-    <!-- Body muscle definition -->
-    <path d="M 60 90 Q 68 78 80 88" class="dino-outline" stroke-width="1.2"/>
-    <path d="M 110 90 Q 120 78 130 88" class="dino-outline" stroke-width="1.2"/>
+    <!-- Neck (very long) -->
+    <rect x="130" y="55" width="22" height="60" rx="11" class="limb"/>
     
-    <!-- Very long neck (distinctive feature) -->
-    <path d="M 140 65 Q 160 40 175 15" class="dino-body" stroke-width="2.5"/>
+    <!-- Head -->
+    <circle cx="160" cy="45" r="13" class="body"/>
     
-    <!-- Neck curve details -->
-    <path d="M 142 60 Q 158 35 172 12" class="dino-outline" stroke-width="1.2"/>
-    
-    <!-- Small head -->
-    <ellipse cx="178" cy="8" rx="12" ry="14" class="dino-body"/>
-    
-    <!-- Snout -->
-    <ellipse cx="187" cy="12" rx="7" ry="5" class="dino-body"/>
+    <!-- Small head details -->
+    <ellipse cx="170" cy="42" rx="6" ry="5" class="body"/>
     
     <!-- Eye -->
-    <circle cx="182" cy="4" r="1.8" fill="#000"/>
+    <circle cx="165" cy="38" r="1.8" fill="#000"/>
     
     <!-- Nostril -->
-    <circle cx="191" cy="10" r="1" fill="#000"/>
+    <circle cx="174" cy="42" r="1" fill="#000"/>
     
-    <!-- Mouth opening -->
-    <line x1="188" y1="16" x2="193" y2="19" class="dino-outline" stroke-width="1"/>
-    
-    <!-- Back spikes/ridges -->
-    <line x1="75" y1="60" x2="72" y2="35" class="dino-outline" stroke-width="1.5"/>
-    <line x1="95" y1="55" x2="95" y2="28" class="dino-outline" stroke-width="1.8"/>
-    <line x1="115" y1="60" x2="120" y2="35" class="dino-outline" stroke-width="1.5"/>
-    
-    <!-- Front leg muscle definition -->
-    <path d="M 130 140 Q 128 155 127 175" class="dino-outline" stroke-width="1"/>
-    <path d="M 165 140 Q 167 155 168 175" class="dino-outline" stroke-width="1"/>
+    <!-- Back spikes -->
+    <polygon points="60,70 55,48 65,52" class="body"/>
+    <polygon points="85,60 82,32 88,40" class="body"/>
+    <polygon points="110,62 110,32 118,42" class="body"/>
   </g>
 </svg>

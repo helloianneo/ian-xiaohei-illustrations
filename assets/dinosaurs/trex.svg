@@ -1,79 +1,58 @@
 <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- T-Rex: Fierce predator with powerful jaws -->
   <defs>
     <style>
-      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .dino-body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .limb { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
     </style>
   </defs>
   
   <g>
-    <!-- Tail (long and curved for balance) -->
-    <path d="M 50 120 Q 35 115 20 130 Q 15 145 25 155 Q 35 160 45 150" class="dino-body"/>
+    <!-- Tail -->
+    <ellipse cx="50" cy="120" rx="25" ry="12" class="body"/>
     
-    <!-- Back legs (powerful and thick) -->
-    <ellipse cx="75" cy="160" rx="12" ry="35" class="dino-body"/>
-    <ellipse cx="105" cy="160" rx="12" ry="35" class="dino-body"/>
+    <!-- Body -->
+    <ellipse cx="100" cy="110" rx="45" ry="35" class="body"/>
     
-    <!-- Feet -->
-    <ellipse cx="72" cy="200" rx="10" ry="8" class="dino-body"/>
-    <ellipse cx="108" cy="200" rx="10" ry="8" class="dino-body"/>
+    <!-- Neck -->
+    <rect x="130" y="85" width="20" height="35" rx="10" class="body"/>
     
-    <!-- Claws on feet -->
-    <line x1="68" y1="200" x2="62" y2="215" class="dino-outline" stroke-width="2"/>
-    <line x1="76" y1="200" x2="82" y2="215" class="dino-outline" stroke-width="2"/>
-    <line x1="104" y1="200" x2="98" y2="215" class="dino-outline" stroke-width="2"/>
-    <line x1="112" y1="200" x2="118" y2="215" class="dino-outline" stroke-width="2"/>
-    
-    <!-- Body (large, muscular) -->
-    <ellipse cx="90" cy="110" rx="50" ry="38" class="dino-body"/>
-    
-    <!-- Chest detail -->
-    <path d="M 60 100 Q 65 90 75 95" class="dino-outline"/>
-    
-    <!-- Small front arms (vestigial) -->
-    <ellipse cx="110" cy="115" rx="8" ry="22" transform="rotate(-30 110 115)" class="dino-body"/>
-    <ellipse cx="120" cy="130" rx="8" ry="22" transform="rotate(-25 120 130)" class="dino-body"/>
-    
-    <!-- Claws on front arms -->
-    <line x1="115" y1="140" x2="118" y2="155" class="dino-outline" stroke-width="1.5"/>
-    <line x1="122" y1="140" x2="128" y2="153" class="dino-outline" stroke-width="1.5"/>
-    
-    <!-- Neck (thick and muscular) -->
-    <path d="M 60 90 Q 50 70 45 45" class="dino-body" stroke-width="2.2"/>
-    
-    <!-- Head (large with powerful jaws) -->
-    <ellipse cx="42" cy="32" rx="18" ry="20" class="dino-body"/>
-    
-    <!-- Upper jaw -->
-    <path d="M 50 35 L 65 32" class="dino-outline" stroke-width="2"/>
+    <!-- Head -->
+    <ellipse cx="155" cy="65" rx="16" ry="18" class="body"/>
     
     <!-- Lower jaw -->
-    <path d="M 50 42 L 68 45" class="dino-outline" stroke-width="2"/>
-    
-    <!-- Teeth marks -->
-    <line x1="52" y1="34" x2="54" y2="30" class="dino-outline" stroke-width="1"/>
-    <line x1="58" y1="33" x2="60" y2="28" class="dino-outline" stroke-width="1"/>
-    <line x1="64" y1="32" x2="66" y2="27" class="dino-outline" stroke-width="1"/>
-    
-    <line x1="52" y1="43" x2="54" y2="48" class="dino-outline" stroke-width="1"/>
-    <line x1="60" y1="44" x2="62" y2="50" class="dino-outline" stroke-width="1"/>
-    <line x1="66" y1="46" x2="68" y2="52" class="dino-outline" stroke-width="1"/>
+    <rect x="155" y="80" width="18" height="8" rx="4" class="body"/>
     
     <!-- Eye -->
-    <circle cx="48" cy="28" r="2.5" fill="#000"/>
+    <circle cx="160" cy="60" r="2.5" fill="#000"/>
     
-    <!-- Nostril -->
-    <circle cx="40" cy="35" r="1.5" fill="#000"/>
+    <!-- Back leg left -->
+    <ellipse cx="80" cy="160" rx="12" ry="32" class="limb"/>
     
-    <!-- Back spikes/ridges -->
-    <path d="M 65 75 L 62 55" class="dino-outline" stroke-width="2.2"/>
-    <path d="M 80 70 L 78 45" class="dino-outline" stroke-width="2.5"/>
-    <path d="M 95 70 L 95 42" class="dino-outline" stroke-width="2.5"/>
-    <path d="M 110 70 L 112 48" class="dino-outline" stroke-width="2.2"/>
-    <path d="M 125 75 L 128 58" class="dino-outline" stroke-width="2"/>
+    <!-- Back leg right -->
+    <ellipse cx="110" cy="160" rx="12" ry="32" class="limb"/>
     
-    <!-- Muscle definition on body -->
-    <path d="M 70 105 Q 75 100 85 105" class="dino-outline" stroke-width="1"/>
+    <!-- Back foot left -->
+    <ellipse cx="78" cy="200" rx="10" ry="8" class="body"/>
+    
+    <!-- Back foot right -->
+    <ellipse cx="112" cy="200" rx="10" ry="8" class="body"/>
+    
+    <!-- Front arm left -->
+    <rect x="105" y="115" width="10" height="20" rx="5" class="limb"/>
+    
+    <!-- Front arm right -->
+    <rect x="120" y="120" width="10" height="18" rx="5" class="limb"/>
+    
+    <!-- Spike 1 -->
+    <polygon points="70,75 65,50 75,50" class="body"/>
+    
+    <!-- Spike 2 -->
+    <polygon points="90,68 85,40 95,40" class="body"/>
+    
+    <!-- Spike 3 -->
+    <polygon points="110,65 105,35 115,35" class="body"/>
+    
+    <!-- Spike 4 -->
+    <polygon points="130,68 128,42 138,40" class="body"/>
   </g>
 </svg>

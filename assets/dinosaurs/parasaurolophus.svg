@@ -1,73 +1,57 @@
 <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Parasaurolophus: Hadrosaur with distinctive curved crest -->
   <defs>
     <style>
-      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .dino-body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
       .crest { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
     </style>
   </defs>
   
   <g>
-    <!-- Tail (long for balance) -->
-    <path d="M 50 125 Q 30 120 15 140 Q 8 155 15 165" class="dino-body" stroke-width="2.2"/>
+    <!-- Tail -->
+    <path d="M 50 125 Q 32 120 12 140" fill="none" stroke="#000" stroke-width="2.2"/>
+    <ellipse cx="8" cy="143" rx="6" ry="5" class="body"/>
     
-    <!-- Back legs (powerful) -->
-    <ellipse cx="70" cy="165" rx="13" ry="35" class="dino-body"/>
-    <ellipse cx="105" cy="165" rx="13" ry="35" class="dino-body"/>
+    <!-- Body -->
+    <ellipse cx="90" cy="115" rx="45" ry="40" class="body"/>
     
-    <!-- Back feet -->
-    <ellipse cx="68" cy="208" rx="11" ry="9" class="dino-body"/>
-    <ellipse cx="107" cy="208" rx="11" ry="9" class="dino-body"/>
+    <!-- Neck -->
+    <rect x="125" y="95" width="22" height="35" rx="11" class="body"/>
     
-    <!-- Front legs (hadrosaur - can walk on two or four) -->
-    <ellipse cx="82" cy="150" rx="11" ry="32" class="dino-body"/>
-    <ellipse cx="115" cy="150" rx="11" ry="32" class="dino-body"/>
+    <!-- Head -->
+    <ellipse cx="160" cy="70" rx="14" ry="15" class="body"/>
     
-    <!-- Front feet -->
-    <ellipse cx="80" cy="188" rx="9" ry="8" class="dino-body"/>
-    <ellipse cx="117" cy="188" rx="9" ry="8" class="dino-body"/>
+    <!-- Crest (curved, backward) -->
+    <path d="M 162 58 Q 180 45 195 48 Q 195 58 180 62 Q 165 62 162 60" fill="#f5f5f0" stroke="#000" stroke-width="2.2"/>
     
-    <!-- Body (rounded, herbivore) -->
-    <ellipse cx="90" cy="110" rx="48" ry="40" class="dino-body"/>
+    <!-- Crest inner curve -->
+    <path d="M 165 58 Q 180 48 192 50" fill="none" stroke="#000" stroke-width="1.2"/>
     
-    <!-- Chest detail -->
-    <path d="M 60 100 Q 65 90 75 95" class="dino-outline" stroke-width="1"/>
-    
-    <!-- Neck (angled) -->
-    <path d="M 130 100 Q 150 80 160 50" class="dino-body" stroke-width="2.2"/>
-    
-    <!-- Head (blocky, hadrosaur typical) -->
-    <ellipse cx="167" cy="42" rx="14" ry="16" class="dino-body"/>
-    
-    <!-- Snout (flat for herbivore) -->
-    <ellipse cx="175" cy="50" rx="10" ry="7" class="dino-body"/>
+    <!-- Snout -->
+    <ellipse cx="172" cy="76" rx="8" ry="6" class="body"/>
     
     <!-- Eye -->
-    <circle cx="170" cy="36" r="1.8" fill="#000"/>
+    <circle cx="165" cy="65" r="1.8" fill="#000"/>
     
-    <!-- Nostril -->
-    <circle cx="182" cy="48" r="1" fill="#000"/>
+    <!-- Back legs -->
+    <ellipse cx="70" cy="168" rx="13" ry="34" class="body"/>
+    <ellipse cx="105" cy="168" rx="13" ry="34" class="body"/>
     
-    <!-- DISTINCTIVE CURVED CREST (main feature) -->
-    <!-- Crest main structure (tubular, curved) -->
-    <path d="M 164 32 Q 175 20 188 18 Q 195 18 198 28 Q 195 35 185 38 Q 175 40 165 35" class="crest" stroke-width="2.2"/>
+    <!-- Back feet -->
+    <ellipse cx="68" cy="210" rx="11" ry="8" class="body"/>
+    <ellipse cx="107" cy="210" rx="11" ry="8" class="body"/>
     
-    <!-- Crest curve interior -->
-    <path d="M 166 33 Q 176 22 187 20" class="dino-outline" stroke-width="1.5"/>
+    <!-- Front legs -->
+    <ellipse cx="80" cy="158" rx="11" ry="30" class="body"/>
+    <ellipse cx="115" cy="158" rx="11" ry="30" class="body"/>
     
-    <!-- Crest ridges/details -->
-    <line x1="170" y1="29" x2="173" y2="18" class="dino-outline" stroke-width="1"/>
-    <line x1="178" y1="24" x2="182" y2="12" class="dino-outline" stroke-width="1"/>
-    <line x1="187" y1="23" x2="192" y2="15" class="dino-outline" stroke-width="1"/>
+    <!-- Front feet -->
+    <ellipse cx="78" cy="193" rx="9" ry="7" class="body"/>
+    <ellipse cx="117" cy="193" rx="9" ry="7" class="body"/>
     
     <!-- Back spikes/ridge -->
-    <line x1="65" y1="80" x2="62" y2="55" class="dino-outline" stroke-width="1.5"/>
-    <line x1="80" y1="75" x2="80" y2="48" class="dino-outline" stroke-width="1.8"/>
-    <line x1="95" y1="72" x2="98" y2="45" class="dino-outline" stroke-width="1.8"/>
-    <line x1="110" y1="75" x2="115" y2="52" class="dino-outline" stroke-width="1.5"/>
-    
-    <!-- Muscle definition on body -->
-    <path d="M 70 105 Q 75 95 85 100" class="dino-outline" stroke-width="1"/>
+    <polygon points="65,82 60,58 70,65" class="crest"/>
+    <polygon points="82,75 80,48 88,58" class="crest"/>
+    <polygon points="98,72 98,42 105,55" class="crest"/>
+    <polygon points="115,75 118,52 123,62" class="crest"/>
   </g>
 </svg>

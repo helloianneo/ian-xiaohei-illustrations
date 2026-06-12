@@ -1,78 +1,65 @@
 <svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
-  <!-- Velociraptor: Small agile hunter with sharp claws -->
   <defs>
     <style>
-      .dino-outline { stroke: #000; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-      .dino-body { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
-      .claw { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .limb { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
     </style>
   </defs>
   
   <g>
-    <!-- Long curved tail (for balance) -->
-    <path d="M 50 115 Q 30 110 15 130 Q 8 145 5 165 Q 8 175 15 170" class="dino-body" stroke-width="2.2"/>
+    <!-- Tail (curved) -->
+    <path d="M 55 120 Q 35 115 15 135" fill="none" stroke="#000" stroke-width="2"/>
+    <ellipse cx="20" cy="138" rx="6" ry="5" class="body"/>
     
-    <!-- Body (lean, athletic) -->
-    <ellipse cx="80" cy="110" rx="38" ry="32" class="dino-body"/>
+    <!-- Body (lean) -->
+    <ellipse cx="85" cy="110" rx="40" ry="32" class="body"/>
     
-    <!-- Chest (muscular) -->
-    <path d="M 60 100 Q 65 90 75 95" class="dino-outline" stroke-width="1.2"/>
+    <!-- Chest bump -->
+    <circle cx="65" cy="95" r="8" class="body"/>
     
-    <!-- Back legs (powerful, digitigrade stance) -->
-    <ellipse cx="70" cy="160" rx="10" ry="35" class="dino-body"/>
-    <ellipse cx="95" cy="160" rx="10" ry="35" class="dino-body"/>
+    <!-- Neck -->
+    <rect x="110" y="90" width="18" height="32" rx="9" class="body"/>
     
-    <!-- Feet (three-toed) -->
-    <ellipse cx="68" cy="205" rx="9" ry="7" class="dino-body"/>
-    <ellipse cx="97" cy="205" rx="9" ry="7" class="dino-body"/>
+    <!-- Head -->
+    <ellipse cx="140" cy="65" rx="14" ry="15" class="body"/>
     
-    <!-- Large killing claw on feet (signature feature) -->
-    <path d="M 65 205 L 55 225" class="claw" stroke-width="2.2"/>
-    <path d="M 68 208 L 65 228" class="claw" stroke-width="2"/>
-    <path d="M 71 207 L 75 225" class="claw" stroke-width="2"/>
+    <!-- Snout (pointed) -->
+    <polygon points="152,62 165,60 160,68" class="body"/>
     
-    <path d="M 94 205 L 84 225" class="claw" stroke-width="2.2"/>
-    <path d="M 97 208 L 94 228" class="claw" stroke-width="2"/>
-    <path d="M 100 207 L 104 225" class="claw" stroke-width="2"/>
+    <!-- Eye -->
+    <circle cx="145" cy="58" r="1.8" fill="#000"/>
     
-    <!-- Neck (curved, predatory posture) -->
-    <path d="M 105 100 Q 125 85 145 65" class="dino-body" stroke-width="2"/>
+    <!-- Back leg left -->
+    <ellipse cx="70" cy="162" rx="10" ry="32" class="limb"/>
     
-    <!-- Head (sleek, predatory) -->
-    <ellipse cx="155" cy="55" rx="15" ry="16" class="dino-body"/>
+    <!-- Back leg right -->
+    <ellipse cx="100" cy="162" rx="10" ry="32" class="limb"/>
     
-    <!-- Snout (pointed for predator) -->
-    <path d="M 165 50 L 178 48" class="dino-outline" stroke-width="1.8"/>
+    <!-- Back foot left -->
+    <ellipse cx="69" cy="203" rx="8" ry="6" class="body"/>
     
-    <!-- Lower jaw -->
-    <path d="M 165 60 L 177 62" class="dino-outline" stroke-width="1.5"/>
+    <!-- Back foot right -->
+    <ellipse cx="101" cy="203" rx="8" ry="6" class="body"/>
     
-    <!-- Teeth -->
-    <line x1="168" y1="48" x2="170" y2="44" class="dino-outline" stroke-width="1"/>
-    <line x1="173" y1="47" x2="175" y2="43" class="dino-outline" stroke-width="1"/>
+    <!-- Front leg left -->
+    <ellipse cx="82" cy="158" rx="9" ry="28" class="limb"/>
     
-    <!-- Eye (forward-facing, hunter) -->
-    <circle cx="160" cy="50" r="2.2" fill="#000"/>
+    <!-- Front leg right -->
+    <ellipse cx="108" cy="158" rx="9" ry="28" class="limb"/>
     
-    <!-- Nostril -->
-    <circle cx="172" cy="52" r="1" fill="#000"/>
+    <!-- Front foot left -->
+    <ellipse cx="81" cy="193" rx="7" ry="5" class="body"/>
     
-    <!-- Front limbs (smaller, grasping) -->
-    <ellipse cx="100" cy="120" rx="7" ry="24" transform="rotate(-35 100 120)" class="dino-body"/>
-    <ellipse cx="110" cy="125" rx="7" ry="24" transform="rotate(-25 110 125)" class="dino-body"/>
+    <!-- Front foot right -->
+    <ellipse cx="109" cy="193" rx="7" ry="5" class="body"/>
     
-    <!-- Front claws (smaller than feet) -->
-    <line x1="100" y1="140" x2="95" y2="155" class="claw" stroke-width="1.5"/>
-    <line x1="103" y1="140" x2="102" y2="157" class="claw" stroke-width="1.5"/>
-    <line x1="108" y1="142" x2="112" y2="158" class="claw" stroke-width="1.5"/>
+    <!-- Back claw -->
+    <polygon points="69,208 65,225 72,220" class="body"/>
+    <polygon points="101,208 97,225 104,220" class="body"/>
     
-    <line x1="110" y1="142" x2="105" y2="157" class="claw" stroke-width="1.5"/>
-    <line x1="113" y1="142" x2="112" y2="159" class="claw" stroke-width="1.5"/>
-    
-    <!-- Feather-like spikes on back (proto-feathers) -->
-    <line x1="65" y1="80" x2="60" y2="55" class="dino-outline" stroke-width="1.2"/>
-    <line x1="80" y1="75" x2="80" y2="48" class="dino-outline" stroke-width="1.5"/>
-    <line x1="95" y1="75" x2="100" y2="48" class="dino-outline" stroke-width="1.5"/>
-    <line x1="110" y1="78" x2="120" y2="55" class="dino-outline" stroke-width="1.2"/>
+    <!-- Spikes on back -->
+    <polygon points="65,80 60,55 70,60" class="body"/>
+    <polygon points="85,72 82,45 88,52" class="body"/>
+    <polygon points="105,72 102,45 108,52" class="body"/>
   </g>
 </svg>
