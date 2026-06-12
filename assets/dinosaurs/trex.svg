@@ -1,0 +1,33 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <!-- T-Rex: Fierce predator with powerful jaws and small arms -->
+  <g stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="100" cy="100" rx="50" ry="35"/>
+    <!-- Neck -->
+    <path d="M 140 90 Q 160 80 170 60"/>
+    <!-- Head -->
+    <ellipse cx="175" cy="50" rx="20" ry="18"/>
+    <!-- Mouth -->
+    <path d="M 185 48 L 195 45 M 185 52 L 195 55"/>
+    <!-- Eye -->
+    <circle cx="180" cy="48" r="2" fill="#000"/>
+    <!-- Teeth marks -->
+    <line x1="190" y1="44" x2="192" y2="42"/>
+    <line x1="190" y1="56" x2="192" y2="58"/>
+    <!-- Tail -->
+    <path d="M 50 100 Q 30 95 20 110 Q 15 120 25 125"/>
+    <!-- Back leg -->
+    <path d="M 90 130 L 85 165"/>
+    <path d="M 110 130 L 115 165"/>
+    <!-- Front leg (small) -->
+    <path d="M 135 115 L 140 135"/>
+    <path d="M 145 115 L 148 135"/>
+    <!-- Claws on front legs -->
+    <path d="M 140 135 L 138 140"/>
+    <path d="M 148 135 L 150 140"/>
+    <!-- Back spikes -->
+    <line x1="80" y1="65" x2="75" y2="45"/>
+    <line x1="100" y1="60" x2="100" y2="38"/>
+    <line x1="120" y1="65" x2="125" y2="45"/>
+  </g>
+</svg>

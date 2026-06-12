@@ -1,0 +1,34 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <!-- Triceratops: Three-horned dinosaur with defensive nature -->
+  <g stroke="#000" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Body -->
+    <ellipse cx="100" cy="100" rx="45" ry="38"/>
+    <!-- Head -->
+    <ellipse cx="150" cy="85" rx="25" ry="22"/>
+    <!-- Frill (bony collar) -->
+    <path d="M 155 65 Q 170 60 175 70 Q 170 75 155 75"/>
+    <path d="M 155 65 Q 160 50 170 55"/>
+    <!-- Horns -->
+    <line x1="160" y1="70" x2="175" y2="55"/> <!-- Top horn -->
+    <line x1="155" y1="90" x2="175" y2="100"/> <!-- Left horn -->
+    <line x1="160" y1="95" x2="180" y2="105"/> <!-- Right horn -->
+    <!-- Eye -->
+    <circle cx="155" cy="82" r="2" fill="#000"/>
+    <!-- Nostril -->
+    <circle cx="150" cy="88" r="1.5" fill="#000"/>
+    <!-- Neck -->
+    <path d="M 140 105 L 130 115"/>
+    <!-- Back legs -->
+    <path d="M 80 135 L 75 170"/>
+    <path d="M 110 135 L 115 170"/>
+    <!-- Front legs -->
+    <path d="M 90 130 L 88 160"/>
+    <path d="M 120 130 L 122 160"/>
+    <!-- Tail -->
+    <path d="M 55 100 Q 40 105 35 120"/>
+    <!-- Back spikes/ridges -->
+    <line x1="75" y1="70" x2="70" y2="50"/>
+    <line x1="100" y1="65" x2="100" y2="42"/>
+    <line x1="125" y1="70" x2="130" y2="50"/>
+  </g>
+</svg>
