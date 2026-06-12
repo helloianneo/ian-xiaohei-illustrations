@@ -1,0 +1,57 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <defs>
+    <style>
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .crest { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Tail -->
+    <path d="M 50 125 Q 32 120 12 140" fill="none" stroke="#000" stroke-width="2.2"/>
+    <ellipse cx="8" cy="143" rx="6" ry="5" class="body"/>
+    
+    <!-- Body -->
+    <ellipse cx="90" cy="115" rx="45" ry="40" class="body"/>
+    
+    <!-- Neck -->
+    <rect x="125" y="95" width="22" height="35" rx="11" class="body"/>
+    
+    <!-- Head -->
+    <ellipse cx="160" cy="70" rx="14" ry="15" class="body"/>
+    
+    <!-- Crest (curved, backward) -->
+    <path d="M 162 58 Q 180 45 195 48 Q 195 58 180 62 Q 165 62 162 60" fill="#f5f5f0" stroke="#000" stroke-width="2.2"/>
+    
+    <!-- Crest inner curve -->
+    <path d="M 165 58 Q 180 48 192 50" fill="none" stroke="#000" stroke-width="1.2"/>
+    
+    <!-- Snout -->
+    <ellipse cx="172" cy="76" rx="8" ry="6" class="body"/>
+    
+    <!-- Eye -->
+    <circle cx="165" cy="65" r="1.8" fill="#000"/>
+    
+    <!-- Back legs -->
+    <ellipse cx="70" cy="168" rx="13" ry="34" class="body"/>
+    <ellipse cx="105" cy="168" rx="13" ry="34" class="body"/>
+    
+    <!-- Back feet -->
+    <ellipse cx="68" cy="210" rx="11" ry="8" class="body"/>
+    <ellipse cx="107" cy="210" rx="11" ry="8" class="body"/>
+    
+    <!-- Front legs -->
+    <ellipse cx="80" cy="158" rx="11" ry="30" class="body"/>
+    <ellipse cx="115" cy="158" rx="11" ry="30" class="body"/>
+    
+    <!-- Front feet -->
+    <ellipse cx="78" cy="193" rx="9" ry="7" class="body"/>
+    <ellipse cx="117" cy="193" rx="9" ry="7" class="body"/>
+    
+    <!-- Back spikes/ridge -->
+    <polygon points="65,82 60,58 70,65" class="crest"/>
+    <polygon points="82,75 80,48 88,58" class="crest"/>
+    <polygon points="98,72 98,42 105,55" class="crest"/>
+    <polygon points="115,75 118,52 123,62" class="crest"/>
+  </g>
+</svg>

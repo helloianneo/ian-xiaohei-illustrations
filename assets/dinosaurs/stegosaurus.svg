@@ -1,0 +1,65 @@
+<svg viewBox="0 0 200 280" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <defs>
+    <style>
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .plate { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Tail -->
+    <ellipse cx="50" cy="130" rx="22" ry="12" class="body"/>
+    
+    <!-- Body -->
+    <ellipse cx="100" cy="120" rx="48" ry="42" class="body"/>
+    
+    <!-- Neck (angled down) -->
+    <rect x="135" y="100" width="20" height="35" rx="10" class="body"/>
+    
+    <!-- Head -->
+    <ellipse cx="160" cy="70" rx="14" ry="16" class="body"/>
+    
+    <!-- Eye -->
+    <circle cx="165" cy="65" r="1.8" fill="#000"/>
+    
+    <!-- Snout -->
+    <ellipse cx="172" cy="72" rx="6" ry="5" class="body"/>
+    
+    <!-- Back leg left -->
+    <ellipse cx="75" cy="175" rx="14" ry="35" class="body"/>
+    
+    <!-- Back leg right -->
+    <ellipse cx="115" cy="175" rx="14" ry="35" class="body"/>
+    
+    <!-- Back foot left -->
+    <ellipse cx="73" cy="218" rx="12" ry="9" class="body"/>
+    
+    <!-- Back foot right -->
+    <ellipse cx="117" cy="218" rx="12" ry="9" class="body"/>
+    
+    <!-- Front leg left -->
+    <ellipse cx="85" cy="168" rx="12" ry="32" class="body"/>
+    
+    <!-- Front leg right -->
+    <ellipse cx="120" cy="168" rx="12" ry="32" class="body"/>
+    
+    <!-- Front foot left -->
+    <ellipse cx="83" cy="205" rx="10" ry="8" class="body"/>
+    
+    <!-- Front foot right -->
+    <ellipse cx="122" cy="205" rx="10" ry="8" class="body"/>
+    
+    <!-- Tail spikes -->
+    <polygon points="28,135 18,155 25,155" class="plate"/>
+    <polygon points="32,140 20,165 30,165" class="plate"/>
+    <polygon points="45,138 32,168 48,165" class="plate"/>
+    <polygon points="58,135 48,170 62,168" class="plate"/>
+    
+    <!-- Back plates (5 plates along spine) -->
+    <ellipse cx="70" cy="75" rx="10" ry="22" class="plate"/>
+    <ellipse cx="85" cy="65" rx="11" ry="26" class="plate"/>
+    <ellipse cx="100" cy="60" rx="12" ry="28" class="plate"/>
+    <ellipse cx="115" cy="65" rx="11" ry="26" class="plate"/>
+    <ellipse cx="130" cy="78" rx="9" ry="22" class="plate"/>
+  </g>
+</svg>

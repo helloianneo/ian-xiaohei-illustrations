@@ -1,0 +1,65 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <defs>
+    <style>
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .limb { stroke: #000; stroke-width: 1.8; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Tail (curved) -->
+    <path d="M 55 120 Q 35 115 15 135" fill="none" stroke="#000" stroke-width="2"/>
+    <ellipse cx="20" cy="138" rx="6" ry="5" class="body"/>
+    
+    <!-- Body (lean) -->
+    <ellipse cx="85" cy="110" rx="40" ry="32" class="body"/>
+    
+    <!-- Chest bump -->
+    <circle cx="65" cy="95" r="8" class="body"/>
+    
+    <!-- Neck -->
+    <rect x="110" y="90" width="18" height="32" rx="9" class="body"/>
+    
+    <!-- Head -->
+    <ellipse cx="140" cy="65" rx="14" ry="15" class="body"/>
+    
+    <!-- Snout (pointed) -->
+    <polygon points="152,62 165,60 160,68" class="body"/>
+    
+    <!-- Eye -->
+    <circle cx="145" cy="58" r="1.8" fill="#000"/>
+    
+    <!-- Back leg left -->
+    <ellipse cx="70" cy="162" rx="10" ry="32" class="limb"/>
+    
+    <!-- Back leg right -->
+    <ellipse cx="100" cy="162" rx="10" ry="32" class="limb"/>
+    
+    <!-- Back foot left -->
+    <ellipse cx="69" cy="203" rx="8" ry="6" class="body"/>
+    
+    <!-- Back foot right -->
+    <ellipse cx="101" cy="203" rx="8" ry="6" class="body"/>
+    
+    <!-- Front leg left -->
+    <ellipse cx="82" cy="158" rx="9" ry="28" class="limb"/>
+    
+    <!-- Front leg right -->
+    <ellipse cx="108" cy="158" rx="9" ry="28" class="limb"/>
+    
+    <!-- Front foot left -->
+    <ellipse cx="81" cy="193" rx="7" ry="5" class="body"/>
+    
+    <!-- Front foot right -->
+    <ellipse cx="109" cy="193" rx="7" ry="5" class="body"/>
+    
+    <!-- Back claw -->
+    <polygon points="69,208 65,225 72,220" class="body"/>
+    <polygon points="101,208 97,225 104,220" class="body"/>
+    
+    <!-- Spikes on back -->
+    <polygon points="65,80 60,55 70,60" class="body"/>
+    <polygon points="85,72 82,45 88,52" class="body"/>
+    <polygon points="105,72 102,45 108,52" class="body"/>
+  </g>
+</svg>

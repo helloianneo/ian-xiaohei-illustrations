@@ -1,0 +1,61 @@
+<svg viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg" style="background-color: #f5f5f0;">
+  <defs>
+    <style>
+      .body { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+      .horn { stroke: #000; stroke-width: 2; fill: #f5f5f0; }
+    </style>
+  </defs>
+  
+  <g>
+    <!-- Tail -->
+    <ellipse cx="45" cy="125" rx="20" ry="10" class="body"/>
+    
+    <!-- Body -->
+    <ellipse cx="95" cy="115" rx="45" ry="38" class="body"/>
+    
+    <!-- Neck -->
+    <rect x="125" y="95" width="22" height="35" rx="11" class="body"/>
+    
+    <!-- Head -->
+    <ellipse cx="155" cy="70" rx="16" ry="17" class="body"/>
+    
+    <!-- Frill (fan shape) -->
+    <ellipse cx="155" cy="48" rx="22" ry="16" class="body"/>
+    
+    <!-- Front horn (top) -->
+    <polygon points="155,38 152,8 158,8" class="horn"/>
+    
+    <!-- Left horn -->
+    <polygon points="140,70 125,90 135,92" class="horn"/>
+    
+    <!-- Right horn -->
+    <polygon points="170,70 185,90 175,92" class="horn"/>
+    
+    <!-- Eye -->
+    <circle cx="160" cy="65" r="2" fill="#000"/>
+    
+    <!-- Back leg left -->
+    <ellipse cx="75" cy="165" rx="13" ry="33" class="body"/>
+    
+    <!-- Back leg right -->
+    <ellipse cx="110" cy="165" rx="13" ry="33" class="body"/>
+    
+    <!-- Back foot left -->
+    <ellipse cx="73" cy="205" rx="11" ry="8" class="body"/>
+    
+    <!-- Back foot right -->
+    <ellipse cx="112" cy="205" rx="11" ry="8" class="body"/>
+    
+    <!-- Front leg left -->
+    <ellipse cx="85" cy="160" rx="11" ry="30" class="body"/>
+    
+    <!-- Front leg right -->
+    <ellipse cx="120" cy="160" rx="11" ry="30" class="body"/>
+    
+    <!-- Front foot left -->
+    <ellipse cx="84" cy="195" rx="9" ry="7" class="body"/>
+    
+    <!-- Front foot right -->
+    <ellipse cx="121" cy="195" rx="9" ry="7" class="body"/>
+  </g>
+</svg>
