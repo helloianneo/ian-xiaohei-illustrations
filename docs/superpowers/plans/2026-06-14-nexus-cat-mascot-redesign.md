@@ -42,7 +42,7 @@
 - Rename: `ian-xiaohei-illustrations/` -> `nexus-cat-mascot/`
 - Rename: `nexus-cat-mascot/references/xiaohei-ip.md` -> `nexus-cat-mascot/references/nexus-cat-ip.md`
 
-- [ ] **Step 1: Check current tree**
+- [x] **Step 1: Check current tree**
 
 Run:
 
@@ -52,7 +52,7 @@ find ian-xiaohei-illustrations -maxdepth 3 -type f | sort
 
 Expected: output includes `ian-xiaohei-illustrations/SKILL.md`, `agents/openai.yaml`, and `references/xiaohei-ip.md`.
 
-- [ ] **Step 2: Rename the Skill directory with git**
+- [x] **Step 2: Rename the Skill directory with git**
 
 Run:
 
@@ -62,7 +62,7 @@ git mv ian-xiaohei-illustrations nexus-cat-mascot
 
 Expected: command exits successfully.
 
-- [ ] **Step 3: Rename the IP reference file with git**
+- [x] **Step 3: Rename the IP reference file with git**
 
 Run:
 
@@ -72,7 +72,7 @@ git mv nexus-cat-mascot/references/xiaohei-ip.md nexus-cat-mascot/references/nex
 
 Expected: command exits successfully.
 
-- [ ] **Step 4: Verify renamed paths**
+- [x] **Step 4: Verify renamed paths**
 
 Run:
 
@@ -82,7 +82,7 @@ find nexus-cat-mascot -maxdepth 3 -type f | sort
 
 Expected: output includes `nexus-cat-mascot/SKILL.md` and `nexus-cat-mascot/references/nexus-cat-ip.md`. It should not include `xiaohei-ip.md`.
 
-- [ ] **Step 5: Commit rename**
+- [x] **Step 5: Commit rename**
 
 Run:
 
