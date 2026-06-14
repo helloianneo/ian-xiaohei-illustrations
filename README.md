@@ -81,7 +81,7 @@ Nexus Cat 必须保持这些特征：
 
 ```bash
 git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git
-cd ian-xiaohei-illustrations
+cd nexus-cat-mascot
 ```
 
 复制 skill 到 Codex skills 目录：
