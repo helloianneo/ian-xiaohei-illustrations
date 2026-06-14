@@ -2,82 +2,85 @@
 
 下面这些 prompt 可以直接复制到 Codex 里使用。
 
-## 只做配图规划
+## 只做 shot list
 
 ```text
-Use $ian-xiaohei-illustrations 先不要生图。
-请分析下面这篇文章哪里值得配图，输出 5 张左右的 shot list。
-每张图写清楚：
-- 放在哪个段落后
-- 图的主题
-- 核心意思
-- 结构类型
-- 小黑在图里做什么
-- 建议元素
-- 建议中文标注词
+Use $nexus-cat-mascot 先不要生图。
+请为下面这篇产品教程设计 5 张 Nexus Cat 吉祥物配图。
+每张写清楚：
+- 用途
+- 场景
+- Nexus Cat 动作
+- 表情
+- 道具
+- 背景复杂度
+- 可选文字标注
 
 <粘贴文章>
 ```
 
-## 文章正文配图
+## 文章或教程配图
 
 ```text
-Use $ian-xiaohei-illustrations 把下面这篇文章生成 4 张小黑怪诞正文配图。
-要求：16:9 横版、纯白背景、黑色手绘线稿、少量红橙蓝中文手写批注。
-每张图只讲一个核心结构，不要做 PPT 信息图，不要可爱卡通。
+Use $nexus-cat-mascot 把下面这篇教程生成 4 张 Nexus Cat 吉祥物配图。
+要求同一只 Nexus Cat 在每张图里保持一致：灰白猫、圆胖身体、大圆眼、腮红、简单黑色描边、最少阴影、深色 hoodie、胸口 `</>`。
 
 <粘贴文章>
 ```
 
-## 长文配图策略
+## 单个场景
 
 ```text
-Use $ian-xiaohei-illustrations 给这篇长文做配图策略。
-不要平均配图，只挑认知锚点：核心判断、输入输出闭环、前后对比、常见坑、承接路径。
-默认 6-8 张，先输出 shot list，不要生成图片。
+Use $nexus-cat-mascot 为这个场景生成一张图：
 
-<粘贴文章>
+Nexus Cat 坐在终端旁边，认真看一条红色错误日志，一只爪子拿着小扳手。
+
+风格：kawaii、干净白底、简单黑描边、最少阴影、友好开发者助手。
 ```
 
-## 单个观点生成一张图
+## Bug 修复主题
 
 ```text
-Use $ian-xiaohei-illustrations 为这个观点生成一张 16:9 正文配图：
+Use $nexus-cat-mascot 生成 3 张同角色图片，主题是“AI 助手帮开发者修 bug”。
+三张分别是：
+1. Nexus Cat 发现 bug
+2. Nexus Cat 递交补丁
+3. Nexus Cat 举起通过测试的 checklist
 
-信任不是喊出来的，而是一块证据一块证据铺过去。
-
-画面要怪诞但清爽，小黑必须承担核心动作。
-中文标注最多 5 个，短一点。
+每张都必须是同一只灰白 Nexus Cat，穿带 `</>` 的 hoodie。
 ```
 
-## 工作流主题
+## 多 panel 教程图
 
 ```text
-Use $ian-xiaohei-illustrations 为“把一条原始素材加工成流量、信任、转化三种内容”生成一张图。
-不要画正式流程图，不要复刻一鱼多吃旧案例。
-请重新发明一个新的低科技隐喻，让小黑参与核心动作。
+Use $nexus-cat-mascot 生成一张 3-panel 教程图：
+Panel 1: Nexus Cat 读取需求
+Panel 2: Nexus Cat 写代码
+Panel 3: Nexus Cat 提交结果
+
+所有 panel 都必须保持同一只 Nexus Cat：灰白毛色、圆胖身体、大圆眼、腮红、深色 hoodie、胸口 `</>`。
 ```
 
-## 改图：去掉标题
+## 产品文档陪伴图
 
 ```text
-Use $ian-xiaohei-illustrations 帮我编辑这张图。
-去掉左上角的“Workflow / 流程图”标题和下划线，其他内容保持不变。
-不要新增任何文字或物件。
+Use $nexus-cat-mascot 为“新用户完成第一次配置”生成一张文档配图。
+Nexus Cat 站在简化的设置卡片旁边，指向一个绿色 check mark。
+背景干净，不要真实 UI 截图，不要复杂流程图。
 ```
 
-## 改图：增强小黑参与感
+## 改图：修复角色一致性
 
 ```text
-Use $ian-xiaohei-illustrations 这张图方向对，但小黑有点像装饰。
-请保持核心意思不变，重生成一版：让小黑成为真正推动结构运转的人。
-画面更怪一点，但仍然纯白、清爽、少字。
+Use $nexus-cat-mascot 这张图方向对，但角色不像固定 Nexus Cat。
+请保持场景含义不变，重生成一版：
+灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 ```
 
-## 生成一组风格样片
+## 改图：修复 hoodie 符号
 
 ```text
-Use $ian-xiaohei-illustrations 输出 5 个不同主题的小黑正文配图效果。
-主题分别覆盖：信息过载、产品验证、内容复利、一人公司、信任建立。
-每张单独生成，不要拼成一张。
+Use $nexus-cat-mascot 帮我编辑这张图。
+只修复 hoodie 胸口符号，让它清楚显示为 `</>`。
+其他角色、动作、背景和构图保持不变。
 ```
