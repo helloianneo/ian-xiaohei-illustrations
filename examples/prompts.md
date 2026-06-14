@@ -7,6 +7,7 @@
 ```text
 Use $nexus-cat-mascot 先不要生图。
 请为下面这篇产品教程设计 5 张 Nexus Cat 吉祥物配图。
+每张都要包含并保持固定 Nexus Cat 角色约束：灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 每张写清楚：
 - 用途
 - 场景
@@ -35,6 +36,7 @@ Use $nexus-cat-mascot 为这个场景生成一张图：
 
 Nexus Cat 坐在终端旁边，认真看一条红色错误日志，一只爪子拿着小扳手。
 
+角色必须保持固定 Nexus Cat：灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 风格：kawaii、干净白底、简单黑描边、最少阴影、友好开发者助手。
 ```
 
@@ -47,7 +49,7 @@ Use $nexus-cat-mascot 生成 3 张同角色图片，主题是“AI 助手帮开�
 2. Nexus Cat 递交补丁
 3. Nexus Cat 举起通过测试的 checklist
 
-每张都必须是同一只灰白 Nexus Cat，穿带 `</>` 的 hoodie。
+每张都必须是同一只 Nexus Cat：灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 ```
 
 ## 多 panel 教程图
@@ -58,7 +60,7 @@ Panel 1: Nexus Cat 读取需求
 Panel 2: Nexus Cat 写代码
 Panel 3: Nexus Cat 提交结果
 
-所有 panel 都必须保持同一只 Nexus Cat：灰白毛色、圆胖身体、大圆眼、腮红、深色 hoodie、胸口 `</>`。
+所有 panel 都必须保持同一只 Nexus Cat：灰白毛色、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 ```
 
 ## 产品文档陪伴图
@@ -66,6 +68,7 @@ Panel 3: Nexus Cat 提交结果
 ```text
 Use $nexus-cat-mascot 为“新用户完成第一次配置”生成一张文档配图。
 Nexus Cat 站在简化的设置卡片旁边，指向一个绿色 check mark。
+角色必须保持固定 Nexus Cat：灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
 背景干净，不要真实 UI 截图，不要复杂流程图。
 ```
 
@@ -81,6 +84,6 @@ Use $nexus-cat-mascot 这张图方向对，但角色不像固定 Nexus Cat。
 
 ```text
 Use $nexus-cat-mascot 帮我编辑这张图。
-只修复 hoodie 胸口符号，让它清楚显示为 `</>`。
-其他角色、动作、背景和构图保持不变。
+保持并修复固定 Nexus Cat 角色约束：灰白猫、圆胖身体、大圆眼、腮红、简单黑描边、最少阴影、深色 hoodie、胸口 `</>`。
+只修复 hoodie 胸口符号，让它清楚显示为 `</>`；其他角色特征、动作、背景和构图保持不变。
 ```
