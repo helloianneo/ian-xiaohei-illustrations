@@ -80,7 +80,7 @@ Nexus Cat 必须保持这些特征：
 克隆仓库：
 
 ```bash
-git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git
+git clone https://github.com/helloianneo/ian-xiaohei-illustrations.git nexus-cat-mascot
 cd nexus-cat-mascot
 ```
 
