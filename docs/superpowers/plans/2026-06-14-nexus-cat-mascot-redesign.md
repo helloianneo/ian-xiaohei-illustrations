@@ -802,7 +802,7 @@ Expected: commit succeeds.
 **Files:**
 - Modify: `examples/prompts.md`
 
-- [ ] **Step 1: Replace `examples/prompts.md`**
+- [x] **Step 1: Replace `examples/prompts.md`**
 
 Use this content:
 
@@ -895,7 +895,7 @@ Use $nexus-cat-mascot 帮我编辑这张图。
 ```
 ````
 
-- [ ] **Step 2: Verify examples use new Skill**
+- [x] **Step 2: Verify examples use new Skill**
 
 Run:
 
@@ -905,7 +905,7 @@ rg -n "ian-xiaohei|小黑|Xiaohei|xiaohei|怪诞|不卖萌|不要可爱" example
 
 Expected: no matches.
 
-- [ ] **Step 3: Commit examples**
+- [x] **Step 3: Commit examples**
 
 Run:
 
