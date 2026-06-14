@@ -438,7 +438,7 @@ Expected: commit succeeds.
 - Modify: `nexus-cat-mascot/references/prompt-template.md`
 - Modify: `nexus-cat-mascot/references/qa-checklist.md`
 
-- [ ] **Step 1: Replace `references/nexus-cat-ip.md`**
+- [x] **Step 1: Replace `references/nexus-cat-ip.md`**
 
 Use this content:
 
@@ -503,7 +503,7 @@ Nexus Cat 是这个 Skill 的固定视觉 IP。
 如果把多张图放在一起，读者应该能立刻判断它们是同一只 Nexus Cat。动作可以变，场景可以变，角色识别度不能变。
 ````
 
-- [ ] **Step 2: Replace `references/style-dna.md`**
+- [x] **Step 2: Replace `references/style-dna.md`**
 
 Use this content:
 
@@ -559,7 +559,7 @@ Use this content:
 要可爱但不低幼，专业但不冷硬，像开发者工具和 AI 产品可以长期使用的友好 mascot。
 ````
 
-- [ ] **Step 3: Replace `references/composition-patterns.md`**
+- [x] **Step 3: Replace `references/composition-patterns.md`**
 
 Use this content:
 
@@ -646,7 +646,7 @@ Use this content:
 如果一组图里 Nexus Cat 的脸型、毛色、衣服、眼睛或体型明显变了，优先重生成并减少场景复杂度。角色一致性比道具丰富度更重要。
 ````
 
-- [ ] **Step 4: Replace `references/prompt-template.md`**
+- [x] **Step 4: Replace `references/prompt-template.md`**
 
 Use this content:
 
@@ -726,7 +726,7 @@ Edit the image so the hoodie chest symbol is clearly `</>`. Preserve the same Ne
 ```
 ````
 
-- [ ] **Step 5: Replace `references/qa-checklist.md`**
+- [x] **Step 5: Replace `references/qa-checklist.md`**
 
 Use this content:
 
@@ -776,7 +776,7 @@ Use this content:
 高质量图应该让读者一眼认出：这是同一只 Nexus Cat，正在友好地帮我完成当前任务。
 ````
 
-- [ ] **Step 6: Verify references**
+- [x] **Step 6: Verify references**
 
 Run:
 
@@ -786,7 +786,7 @@ rg -n "小黑|Xiaohei|xiaohei|怪诞|不卖萌|不要可爱|deadpan|black solid"
 
 Expected: no matches.
 
-- [ ] **Step 7: Commit references**
+- [x] **Step 7: Commit references**
 
 Run:
 
