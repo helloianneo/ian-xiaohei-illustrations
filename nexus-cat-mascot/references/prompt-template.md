@@ -1,51 +1,73 @@
 # 生图提示词模板
 
-每张图单独生成。根据正文内容替换变量，不要把多张图拼在一起。
+每张图单独生成。根据用户主题替换变量，不要默认把多张图拼在一起。
 
 ```text
-Generate one standalone 16:9 horizontal Chinese article illustration.
+Generate one standalone kawaii mascot illustration.
 
-Visual DNA:
-Pure white background. Minimalist black hand-drawn line art. Slightly wobbly pen lines. Lots of empty white space. Sparse red/orange/blue handwritten Chinese annotations. Clean absurd product-sketch feeling. No gradients, no shadows, no paper texture, no complex background, no commercial vector style, no PPT infographic look, no cute mascot poster, no children's illustration, no realistic UI.
+Fixed character:
+Nexus Cat, the same consistent friendly developer-assistant mascot character. A chubby round gray-and-white cat with big round eyes, blush cheeks, simple black outlines, minimal shading, wearing a dark hoodie with a clear `</>` symbol on the chest. Keep the same character design, fur pattern, face, body shape, hoodie, and overall silhouette.
 
-Recurring IP character required:
-小黑, a small solid-black absurd creature with white dot eyes, tiny thin legs, blank serious expression, slightly uneven hand-drawn body shape. 小黑 must perform the core conceptual action, not decorate the scene. Make 小黑 serious, deadpan, and slightly bizarre, not cute.
+Role:
+Nexus Cat acts as a friendly guide and assistant.
 
 Theme:
-{正文配图主题}
+{主题}
 
-Structure type:
-{结构类型：Workflow / 系统局部 / 前后对比 / 角色状态 / 概念隐喻 / 方法分层 / 地图路线 / 小漫画分镜}
+Scene:
+{具体场景}
 
-Core idea:
-{这张图要表达的核心意思}
+Action:
+{Nexus Cat 正在做什么}
 
-Composition:
-{具体画面：小黑在哪里、正在做什么、主要物件是什么、信息如何流动}
+Expression:
+{表情：friendly / focused / happy / curious / relieved / gently confused}
 
-Suggested elements:
-{元素1} / {元素2} / {元素3} / {元素4}
+Props:
+{道具1} / {道具2} / {道具3}
 
-Chinese handwritten labels:
-{标注词1} / {标注词2} / {标注词3} / {标注词4} / {可选标注词5}
+Background:
+Clean white or transparent background, or a very simple light scene. No clutter.
 
-Color use:
-Black for main line art and 小黑. Orange for main flow/path/arrows. Red only for key warnings/problems/results. Blue only for secondary notes or feedback/system state.
+Optional labels:
+{可选短标签，默认少字或无字}
+
+Style:
+Kawaii, rounded, clean, approachable, simple black outline, minimal shading, soft colors, developer-tool companion feel.
 
 Constraints:
-One image explains only one core structure. Keep the main subject around 40%-60% of the canvas. Preserve at least 35% blank white space. Use at most 5-8 short handwritten Chinese labels. Do not write a title in the top-left corner. Do not write the structure type on the image. Do not make it a formal diagram, course slide, or dense explainer. Do not copy prior examples or reuse known case compositions unless explicitly requested; invent a fresh visual metaphor for this specific article. It should be clear but not instructional, interesting but not childish, strange but clean.
+Do not change Nexus Cat into another character. Do not change the gray-and-white fur, chubby body, big round eyes, blush cheeks, hoodie, or `</>` symbol. Do not make it realistic, dark, gritty, heavily shaded, 3D-rendered, or overly complex. Do not create a dense infographic or formal flowchart. If this is multi-panel, repeat the same character design across all panels.
+```
+
+## 多 panel 模板
+
+```text
+Generate one clean multi-panel kawaii mascot illustration with {panel_count} panels.
+
+Use the same Nexus Cat character in every panel: chubby round gray-and-white cat, big round eyes, blush cheeks, simple black outlines, minimal shading, dark hoodie with `</>` symbol. The character design must remain identical across panels.
+
+Panel 1:
+{panel_1_action}
+
+Panel 2:
+{panel_2_action}
+
+Panel 3:
+{panel_3_action}
+
+Keep each panel simple, friendly, and uncluttered. Use only short optional labels. Do not make the panels look like different cats.
 ```
 
 ## 图像编辑提示
 
-去掉左上角标题：
+修复角色漂移：
 
 ```text
-Edit the provided image. Remove only the handwritten title "{要删除的文字}" and its underline from the top-left corner. Fill that area with the same clean white background, matching the surrounding blank paper. Preserve everything else exactly: characters, labels, paths, line style, composition, aspect ratio, and image quality. Do not add any new text or objects.
+Edit or regenerate this image so the character matches Nexus Cat exactly: chubby gray-and-white cat, big round eyes, blush cheeks, simple black outlines, minimal shading, dark hoodie with a clear `</>` symbol. Preserve the original scene idea, but make the mascot consistent with the fixed Nexus Cat design.
 ```
 
-增强怪诞感：
+修复 hoodie 符号：
 
 ```text
-Regenerate this illustration with the same core meaning and simple layout, but make 小黑 more central to the conceptual action. 小黑 should be doing the strange work that explains the idea, not standing beside the diagram. Keep it clean, sparse, hand-drawn, and not cute.
+Edit the image so the hoodie chest symbol is clearly `</>`. Preserve the same Nexus Cat character, pose, background, and composition. Do not add extra text.
 ```
