@@ -926,7 +926,7 @@ Expected: commit succeeds.
 - Inspect: `nexus-cat-mascot/references/*.md`
 - Inspect: `.gitignore`
 
-- [ ] **Step 1: Run old-name scan**
+- [x] **Step 1: Run old-name scan**
 
 Run:
 
@@ -936,7 +936,7 @@ rg -n "小黑|Xiaohei|xiaohei|Ian Xiaohei|ian-xiaohei" README.md examples/prompt
 
 Expected: the only acceptable match is the GitHub repository URL in `README.md` if the repository has not been renamed externally yet. No Skill name, prose positioning, prompt, reference, or agent manifest should use the old IP.
 
-- [ ] **Step 2: Run old-style scan**
+- [x] **Step 2: Run old-style scan**
 
 Run:
 
@@ -946,7 +946,7 @@ rg -n "怪诞|不卖萌|不要可爱|deadpan|black solid|absurd worker|正文结
 
 Expected: no matches.
 
-- [ ] **Step 3: Confirm README does not display old images**
+- [x] **Step 3: Confirm README does not display old images**
 
 Run:
 
@@ -956,7 +956,7 @@ rg -n "examples/images|assets/examples|01-two-breakpoints|trust-bridge|informati
 
 Expected: no matches.
 
-- [ ] **Step 4: Confirm new required names**
+- [x] **Step 4: Confirm new required names**
 
 Run:
 
@@ -966,7 +966,7 @@ rg -n "nexus-cat-mascot|Nexus Cat|</>" README.md examples/prompts.md nexus-cat-m
 
 Expected: multiple matches across README, examples, Skill metadata, agent manifest, and references.
 
-- [ ] **Step 5: Check git status**
+- [x] **Step 5: Check git status**
 
 Run:
 
@@ -976,7 +976,7 @@ git status --short
 
 Expected: clean working tree after all task commits. If files remain modified, inspect them and commit only intentional project changes.
 
-- [ ] **Step 6: Final report**
+- [x] **Step 6: Final report**
 
 Report:
 
