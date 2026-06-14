@@ -284,7 +284,7 @@ Expected: commit succeeds.
 - Modify: `nexus-cat-mascot/SKILL.md`
 - Modify: `nexus-cat-mascot/agents/openai.yaml`
 
-- [ ] **Step 1: Replace `nexus-cat-mascot/SKILL.md`**
+- [x] **Step 1: Replace `nexus-cat-mascot/SKILL.md`**
 
 Replace `nexus-cat-mascot/SKILL.md` with this content:
 
@@ -395,7 +395,7 @@ assets/<topic-slug>-nexus-cat/
 不要长篇解释风格理论；重点说明 Nexus Cat 是否保持一致、是否完成了用户要的动作。
 ````
 
-- [ ] **Step 2: Replace `nexus-cat-mascot/agents/openai.yaml`**
+- [x] **Step 2: Replace `nexus-cat-mascot/agents/openai.yaml`**
 
 Replace `nexus-cat-mascot/agents/openai.yaml` with this content:
 
@@ -408,7 +408,7 @@ policy:
   allow_implicit_invocation: true
 ```
 
-- [ ] **Step 3: Verify metadata**
+- [x] **Step 3: Verify metadata**
 
 Run:
 
@@ -418,7 +418,7 @@ rg -n "ian-xiaohei|小黑|Xiaohei|怪诞|不卖萌|不要可爱" nexus-cat-masco
 
 Expected: no matches.
 
-- [ ] **Step 4: Commit Skill metadata**
+- [x] **Step 4: Commit Skill metadata**
 
 Run:
 
