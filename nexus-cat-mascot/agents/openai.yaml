@@ -1,6 +1,6 @@
 interface:
-  display_name: "Ian 小黑配图"
-  short_description: "为中文文章生成怪诞清爽、有小黑IP的正文配图资产"
-  default_prompt: "Use $ian-xiaohei-illustrations to 为这篇中文文章设计并生成几张小黑怪诞正文配图。"
+  display_name: "Nexus Cat Mascot"
+  short_description: "生成一致的 Nexus Cat kawaii 开发者助手吉祥物图"
+  default_prompt: "Use $nexus-cat-mascot to 为这个主题设计并生成几张 Nexus Cat 吉祥物图。"
 policy:
   allow_implicit_invocation: true
