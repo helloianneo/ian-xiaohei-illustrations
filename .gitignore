@@ -12,3 +12,9 @@ dist/
 
 # Logs
 *.log
+
+# Superpowers local brainstorming companion
+.superpowers/
+
+# Local browser automation artifacts
+.playwright-mcp/
