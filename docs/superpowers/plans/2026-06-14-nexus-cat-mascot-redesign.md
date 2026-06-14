@@ -98,7 +98,7 @@ Expected: commit succeeds.
 **Files:**
 - Modify: `README.md`
 
-- [ ] **Step 1: Replace README with Nexus Cat positioning**
+- [x] **Step 1: Replace README with Nexus Cat positioning**
 
 Replace `README.md` with this content:
 
@@ -257,7 +257,7 @@ Use $nexus-cat-mascot 生成一张 3-panel 教程图：
 8. 保存最终 PNG，并报告用途和路径。
 ````
 
-- [ ] **Step 2: Verify README no longer displays old example images**
+- [x] **Step 2: Verify README no longer displays old example images**
 
 Run:
 
@@ -267,7 +267,7 @@ rg -n "examples/images|01-two-breakpoints|小黑|Xiaohei|xiaohei|怪诞|不卖�
 
 Expected: only repository URL text may include `ian-xiaohei-illustrations`; no old image paths, Xiaohei positioning, or anti-cute constraints appear.
 
-- [ ] **Step 3: Commit README rewrite**
+- [x] **Step 3: Commit README rewrite**
 
 Run:
 
