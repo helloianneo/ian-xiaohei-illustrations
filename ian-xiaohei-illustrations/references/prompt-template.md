@@ -10,7 +10,7 @@
 Generate one standalone 16:9 horizontal Chinese article illustration.
 
 Visual DNA:
-Pure white background. Minimalist black hand-drawn line art. Slightly wobbly pen lines. Lots of empty white space. Sparse red/orange/blue handwritten Chinese annotations. Clean absurd product-sketch feeling. No gradients, no shadows, no paper texture, no complex background, no commercial vector style, no PPT infographic look, no cute mascot poster, no children's illustration, no realistic UI.
+Pure white background. Minimalist black hand-drawn line art. Slightly wobbly pen lines. Lots of empty white space. Sparse yellow/pink/blue handwritten Chinese annotations. Clean absurd product-sketch feeling. No gradients, no shadows, no paper texture, no complex background, no commercial vector style, no PPT infographic look, no cute mascot poster, no children's illustration, no realistic UI.
 
 Recurring IP character required:
 Use {IP=cat} or {IP=duck} or {IP=fusion}. The character is a white-bodied, black-marked simplified creature with small white-dot or line eyes and thin legs/appendages. It must perform the core conceptual action — not merely decorate the scene. Keep the character deadpan, slightly odd, and not cute.
