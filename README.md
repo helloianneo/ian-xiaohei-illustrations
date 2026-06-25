@@ -270,12 +270,6 @@ ian-csm-robot-illustrations/
 
 想了解 Indie Builders Club，加微信：`ianneoxyz`，备注「OPC」。
 
-<p>
-  <img src="assets/ian-wechat-qr.jpg" alt="Ian 微信二维码" width="120">
-</p>
-
-不方便扫码也可以搜索微信：`ianneoxyz`。
-
 ---
 
 ## License
