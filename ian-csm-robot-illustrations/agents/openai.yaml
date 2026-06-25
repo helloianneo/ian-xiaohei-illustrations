@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ian CSM 机器人配图"
+  short_description: "为中文文章生成怪诞清爽、有 CSM 机器人 IP 的正文配图资产"
+  default_prompt: "Use $ian-csm-robot-illustrations to 为这篇中文文章设计并生成几张 CSM 机器人怪诞正文配图。"
+policy:
+  allow_implicit_invocation: true
