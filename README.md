@@ -6,6 +6,18 @@
 
 ---
 
+## English introduction
+
+Ian Xiaohei Illustrations is a Codex skill for turning the key reasoning in Chinese articles, posts, blogs, Notion pages, and workflow documents into memorable inline illustrations. It looks for a single visual anchor—such as a decision, process, state, structure, or metaphor—and turns that idea into a clean 16:9 hand-drawn explanation.
+
+It is not a generic illustration prompt, a slide template, or a dense infographic generator. The skill first understands the article, identifies where an image can clarify a thought, and then creates one focused visual metaphor at a time.
+
+Its signature character is **Xiaohei**: a solid-black figure with white dot eyes, thin legs, and a deadpan expression. Xiaohei is never decorative; it must perform the core action in every image. The default style is a pure white background, sparse black hand-drawn lines, generous whitespace, and restrained red, orange, or blue annotations.
+
+Use this skill when you want an article illustration to make an abstract idea easier to understand and remember—not merely to fill space beside text.
+
+---
+
 ## 这个仓库是什么
 
 Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中文文章、帖子、博客、Notion 文档和方法论内容生成正文配图。
