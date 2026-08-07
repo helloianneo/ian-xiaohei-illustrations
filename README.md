@@ -4,6 +4,8 @@
 >
 > 16:9 横版 | 小黑 IP | 纯白手绘 | 少量红橙蓝中文批注 | Codex Skill
 
+> 🌐 **English version**: [docs/en/README.md](docs/en/README.md)
+
 ---
 
 ## 这个仓库是什么
