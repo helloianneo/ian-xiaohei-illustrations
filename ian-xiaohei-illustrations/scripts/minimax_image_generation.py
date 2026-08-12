@@ -32,6 +32,7 @@ def build_payload(
     prompt: str,
     *,
     model: str = DEFAULT_MODEL,
+    subject_references: Iterable[str] | None = None,
     aspect_ratio: str | None = DEFAULT_ASPECT_RATIO,
     width: int | None = None,
     height: int | None = None,
@@ -57,6 +58,12 @@ def build_payload(
         "n": count,
         "prompt_optimizer": prompt_optimizer,
     }
+    references = list(subject_references or [])
+    if references:
+        payload["subject_reference"] = [
+            {"type": "character", "image_file": image_file}
+            for image_file in references
+        ]
     if width is not None and height is not None:
         payload.update({"width": width, "height": height})
     elif aspect_ratio:
@@ -99,11 +106,16 @@ def request_images(
         message = base_response.get("status_msg") or "image generation failed"
         raise ImageGenerationError(f"MiniMax API error {status_code}: {message}")
 
-    image_entries = (result.get("data") or {}).get("image_urls")
-    if not isinstance(image_entries, list) or not all(
+    response_format = payload.get("response_format", "url")
+    response_field = "image_base64" if response_format == "base64" else "image_urls"
+    data = result.get("data") or {}
+    image_entries = data.get(response_field)
+    if response_format == "base64" and image_entries is None:
+        image_entries = data.get("image_urls")
+    if not isinstance(image_entries, list) or not image_entries or not all(
         isinstance(item, str) and item for item in image_entries
     ):
-        raise ImageGenerationError("response did not include data.image_urls")
+        raise ImageGenerationError(f"response did not include data.{response_field}")
     return image_entries
 
 
@@ -158,6 +170,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=os.getenv("MINIMAX_REGION", "global_en"),
     )
     parser.add_argument("--model", default=DEFAULT_MODEL)
+    parser.add_argument(
+        "--subject-reference",
+        action="append",
+        default=[],
+        metavar="URL_OR_DATA_URL",
+        help="Character reference image; may be repeated",
+    )
     parser.add_argument("--aspect-ratio", default=DEFAULT_ASPECT_RATIO)
     parser.add_argument("--width", type=int)
     parser.add_argument("--height", type=int)
@@ -177,6 +196,7 @@ def main(argv: list[str] | None = None) -> int:
         payload = build_payload(
             args.prompt,
             model=args.model,
+            subject_references=args.subject_reference,
             aspect_ratio=args.aspect_ratio,
             width=args.width,
             height=args.height,

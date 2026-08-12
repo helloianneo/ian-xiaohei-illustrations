@@ -36,6 +36,7 @@ class MiniMaxImageGenerationTests(unittest.TestCase):
     def test_build_payload_uses_dimensions_instead_of_aspect_ratio(self):
         payload = image_generation.build_payload(
             "A clean hand-drawn scene",
+            subject_references=["https://example.test/character.png"],
             width=1280,
             height=720,
             seed=42,
@@ -46,6 +47,15 @@ class MiniMaxImageGenerationTests(unittest.TestCase):
         self.assertEqual(payload["width"], 1280)
         self.assertEqual(payload["height"], 720)
         self.assertNotIn("aspect_ratio", payload)
+        self.assertEqual(
+            payload["subject_reference"],
+            [
+                {
+                    "type": "character",
+                    "image_file": "https://example.test/character.png",
+                }
+            ],
+        )
         self.assertEqual(payload["seed"], 42)
         self.assertEqual(payload["n"], 2)
         self.assertTrue(payload["prompt_optimizer"])
@@ -93,6 +103,27 @@ class MiniMaxImageGenerationTests(unittest.TestCase):
         self.assertEqual(captured["request"].full_url, image_generation.ENDPOINTS["cn_zh"])
         self.assertEqual(captured["request"].get_header("Authorization"), "Bearer test-key")
         self.assertEqual(captured["timeout"], 15)
+
+    def test_request_images_reads_base64_response_field(self):
+        encoded = base64.b64encode(b"image-content").decode("ascii")
+        response_body = {
+            "data": {"image_base64": [encoded]},
+            "base_resp": {"status_code": 0},
+        }
+
+        entries = image_generation.request_images(
+            "test-key",
+            {
+                "model": "image-01",
+                "prompt": "test",
+                "response_format": "base64",
+            },
+            opener=lambda request, timeout: FakeResponse(
+                json.dumps(response_body).encode("utf-8")
+            ),
+        )
+
+        self.assertEqual(entries, [encoded])
 
     def test_save_images_decodes_base64_entries(self):
         expected = b"png-image-content"
