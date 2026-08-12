@@ -53,6 +53,12 @@ description: 生成 Ian 风格的中文正文配图。用于用户要求为中�
 
 如果用户明确要求“生成 / 输出 / 做图 / 帮我生成”，不要停下来等确认；用内置 `image_gen` 每张单独生成。不要把多张图拼在一张里。
 
+If the built-in image tool is unavailable and `MINIMAX_API_KEY` is configured,
+use `scripts/minimax_image_generation.py` to render each image separately. Pass
+`--region cn_zh` for the China endpoint; the default region uses the global
+endpoint. The script saves URL and base64 responses locally before their remote
+URLs expire.
+
 每张图只讲一个核心结构。提示词必须包含：
 
 - 16:9 横版中文正文配图
