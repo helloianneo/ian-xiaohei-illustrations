@@ -1,6 +1,6 @@
 interface:
-  display_name: "鲸鱼娘正文配图"
-  short_description: "生成带实际鲸鱼娘参考图的 3:4 竖版正文配图"
-  default_prompt: "Use $whale-girl-illustrations 为这篇中文内容选择内容卡片或场景隐喻模式，使用 Skill 内的鲸鱼娘参考图，生成一张严格 3:4 竖版、文字可读且有手绘灵性的正文配图。"
+  display_name: "鲸鱼娘小红书图文"
+  short_description: "生成带鲸鱼娘参考图的 3:4 小红书首图与轮播图"
+  default_prompt: "Use $whale-girl-illustrations 为这篇中文内容选择小红书首图、轮播图或单张内容卡片模式，使用 Skill 内的鲸鱼娘参考图，生成严格 3:4、文字可读且有手绘灵性的图文。"
 policy:
   allow_implicit_invocation: true
