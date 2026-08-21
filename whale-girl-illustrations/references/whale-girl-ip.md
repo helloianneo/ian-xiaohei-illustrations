@@ -7,7 +7,6 @@
 - `assets/whale-girl-reference/whale-girl-neutral.jpg`：主身份和服装参考，优先使用。
 - `assets/whale-girl-reference/whale-girl-smile.jpg`：闭眼笑和明亮情绪参考。
 - `assets/whale-girl-reference/whale-girl-wave.jpg`：挥手、手臂动作和互动情绪参考。
-- `assets/layout-reference/content-card-spirit.png`：内容卡片的文字层级、边框、留白和气质参考，不作为角色身份参考。
 
 如果生成工具一次只能稳定使用一张角色图，优先使用 `whale-girl-neutral.jpg`；需要表情或动作时再加 smile 或 wave。保持身份一致，只改变动作、视线、表情和与正文相关的道具。
 

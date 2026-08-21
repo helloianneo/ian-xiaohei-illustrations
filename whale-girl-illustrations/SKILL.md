@@ -27,7 +27,7 @@ description: 为中文文章、帖子、项目介绍和方法论内容生成 3:4
 - `references/prompt-template.md`：带参考图的生图、精确文字和编辑模板。
 - `references/qa-checklist.md`：比例、文字密度、角色大小、PPT 感和参考图一致性检查。
 
-生成鲸鱼娘时必须使用 `assets/whale-girl-reference/` 中的实际图片作为角色参考，不得只依赖文字提示词。`assets/layout-reference/content-card-spirit.png` 只用于校准文字层级、留白、手绘边框和“灵性”，不要照抄其中的具体文案或构图。
+生成鲸鱼娘时必须使用 `assets/whale-girl-reference/` 中的实际图片作为角色参考，不得只依赖文字提示词。
 
 ## 工作流
 

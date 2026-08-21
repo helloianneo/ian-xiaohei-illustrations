@@ -10,7 +10,7 @@ assets/whale-girl-reference/whale-girl-smile.jpg
 assets/whale-girl-reference/whale-girl-wave.jpg
 ```
 
-`assets/layout-reference/content-card-spirit.png` 只在内容卡片模式中作为构图和气质参考。不要把参考图当成提示词的替代物，也不要把参考图中的具体中文内容复制到新图。
+角色参考图只用于保持鲸鱼娘的身份、服装、发色和尾巴，不要把角色参考图当成固定构图或文字模板。
 
 ## 内容卡片模式模板
 
