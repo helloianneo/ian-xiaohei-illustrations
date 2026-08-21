@@ -1,61 +1,91 @@
-# 鲸鱼娘单张生图提示词模板
+# 鲸鱼娘生图与编辑模板
 
-## 使用方式
+## 使用前
 
-先完成信息提炼和构图，再把变量填入模板。每次只生成一张图，不把多个候选构图写进同一次提示词。中文标签应尽量短；如果模型容易错字，宁可去掉标签，后期再局部编辑或排版。
-
-## 单张生成模板
+先读取 `whale-girl-ip.md` 和对应资产。生成鲸鱼娘时把下面的实际文件作为 image reference 传给图像工具：
 
 ```text
-Generate one standalone Chinese article illustration in a strict 3:4 vertical aspect ratio, for example 1080x1440. Do not use 2:3 as the default ratio.
+assets/whale-girl-reference/whale-girl-neutral.jpg
+assets/whale-girl-reference/whale-girl-smile.jpg
+assets/whale-girl-reference/whale-girl-wave.jpg
+```
 
-Core information budget:
-Use only about 20%-30% of the source text's most important information. Express one core judgement, one main action, one relationship, and at most one visible result. Do not summarize or restate the full article.
+`assets/layout-reference/content-card-spirit.png` 只在内容卡片模式中作为构图和气质参考。不要把参考图当成提示词的替代物，也不要把参考图中的具体中文内容复制到新图。
 
-Visual concept:
-{用一句话写出本图唯一的视觉隐喻}
+## 内容卡片模式模板
 
-Whale-girl event:
-Whale-girl is the main character and must perform the central action: {拉 / 捞 / 修 / 接 / 分流 / 守门 / 测量 / 递交 / 打开 / 其他具体动作}. She is acting on {主要物件或阻力}, so the viewer can see {核心关系或结果}. Do not make her a decorative character standing beside the scene.
+```text
+Generate one standalone Chinese article illustration in a strict 3:4 vertical aspect ratio, not 2:3. Use the supplied whale-girl character reference image to preserve the exact character identity, outfit, hair, whale fin ears, blue tail and refined chibi face. Use the supplied content-card reference only for hand-drawn editorial energy, text hierarchy and asymmetrical spacing, not for its exact copy or composition.
 
-Character style:
-One refined chibi whale-girl as the default main subject. Precise, clean, readable face, hands, hair, clothing and whale features. About 70% polished chibi character illustration and 30% light hand-drawn feeling. Keep the character refined and complete; do not turn the whole body into a rough sketch.
+Mode:
+Hand-drawn Chinese editorial content card with readable medium-density text. This is not a rigid PPT dashboard, but it may contain a headline, a short subheadline, 2-4 irregular information areas, one speech/reaction bubble and an optional CTA.
 
-Optional small whale:
-{none / one small whale only if it expresses input, feedback, companionship, scale, or result}. Do not add it only as decoration.
+Exact copy to preserve:
+Headline: {用户指定标题}
+Subheadline: {短副标题}
+Information blocks: {2-4 short blocks, compressed from only the most important 20%-30% of the source}
+CTA or question: {only if supplied or genuinely supported by the source}
 
-Composition:
-{描述纵向画面中角色、物件、动作、留白和视觉流向。不要写成网格、卡片或正式流程图。}
+Layout:
+Near-white warm paper background, deep navy hand-drawn border, pale blue title brush, varied text blocks with clear hierarchy, and one smaller whale-girl placed on the right or lower-right, usually 20%-35% of the canvas. She is thinking, pointing, holding, observing, reacting to or presenting one element. Keep enough area for text. Do not make the whale-girl or a valve/tool the largest object.
 
-Background and material:
-Very pale warm white, almost white, with an extremely subtle paper feel. Clean and airy. No obvious yellow, gray, brown, dirty vintage paper, heavy grain, dark background, or large shadow.
+Character:
+Use the actual supplied reference image, not a generic whale-girl prompt. Keep the navy-blue hair, white frilled maid headband, side blue bow, fin-like ears, navy-and-white maid dress, white apron, blue tail and polished chibi face. Vary only expression, pose and task-related props.
 
-Line and supporting hand-drawn elements:
-Refined clean character linework. Light hand-drawn texture may appear in the border, pale blue title brush, speech bubble, arrows, props and paper feel. Keep the character itself polished, not fully sketchy.
+Hand-drawn details:
+Deep navy loose border, pale blue brush marks, a few conversational bubbles, small underlines, arrows and restrained doodles. At most one small whale character or one to two tiny whale doodles when they add feedback or rhythm. Never stamp whale symbols on every prop.
 
-Color rules:
-Use dark navy and black for structure, outlines and main text. Use blue for the whale-girl, water, state and feedback. Use red-orange only for one key conclusion, warning, resistance or result. Keep all colors restrained.
+Color:
+Deep navy/black for structure and main text, blue for character and state, red-orange only for a key conclusion or warning. Background almost white and lightly paper-textured, never yellow, gray or dirty.
 
-Chinese labels:
-{0-4 short labels, each 2-8 Chinese characters, only if necessary}. Do not add paragraphs, a table, a legend, a numbered list, a watermark or a signature.
+Text handling:
+Do not invent project names, numbers, stars, labels or extra headlines. If exact Chinese rendering is unreliable, leave clean hand-drawn text areas for post-typesetting instead of replacing the required copy with random text.
 
 Negative constraints:
-No 2:3 default output, no horizontal canvas, no PPT infographic, no card wall, no dashboard, no UI screenshot, no dense flowchart, no course slide, no nine-panel layout, no full article text, no multiple main whale-girls, no whale pattern repeated on every prop, no decorative whale stickers everywhere, no cute mascot pose, no childish cartoon, no fully rough-sketch character, no obvious yellow or gray background, no heavy vintage paper, no plastic 3D, no excessive gradients, no large shadows, no "by ian and 小黑", no watermark, no signature.
+No 2:3, no horizontal canvas, no huge character, no huge valve or tool, no giant empty illustration with only four labels, no rigid grid, no equal cards, no dashboard, no UI screenshot, no full article, no dense flowchart, no multiple main whale-girls, no generic character without the reference identity, no full-body sketch, no repeated whale logos, no watermark, no signature, no "by ian and 小黑".
 ```
 
-## 图片编辑模板
+## 场景隐喻模式模板
 
 ```text
-Edit the provided image into a strict 3:4 vertical final composition. Preserve the core whale-girl event, refined character quality, pale warm-white background and restrained colors. Remove only {要删除或修正的对象}. Do not add new characters, extra whale motifs, dense text, watermark, signature, or "by ian and 小黑". Keep the character polished and keep the final image from becoming a PPT card wall.
+Generate one standalone Chinese article illustration in a strict 3:4 vertical aspect ratio, not 2:3. Use the supplied whale-girl reference image as the identity reference.
+
+Core information budget:
+Select only about 20%-30% of the source's most important meaning. Express one judgement, one physical action, one relationship and one visible result. Do not summarize the full article.
+
+Visual concept:
+{一句话写出唯一物理隐喻}
+
+Whale-girl event:
+The referenced whale-girl is {具体动作} on {物件/阻力}, making {核心关系/结果} visible. She is not standing beside the scene as decoration.
+
+Composition:
+{角色、物件、动作、留白和视线流向。角色通常 35%-55%，但不要挤掉必要文字。}
+
+Text:
+{必要的一句判断或少量短标签。用户给出的精确标题/数字不得改写；必要时后期排版。}
+
+Background and style:
+Very pale warm white paper, refined chibi character, hand-drawn border/brush/bubbles/arrows/props, deep navy and black structure, blue character/state, red-orange only for one key result.
+
+Negative constraints:
+No 2:3, no huge tool, no PPT card wall, no full article, no multiple characters, no generic whale-girl, no full-body sketch, no repeated whale motifs, no yellow/gray background, no watermark, no signature, no "by ian and 小黑".
 ```
 
-## 提示词生成前的四行草稿
+## 编辑模板
 
 ```text
+Edit the supplied image into a strict 3:4 vertical final composition. Preserve the whale-girl identity from the supplied reference, the pale warm-white background, deep-navy hand-drawn structure and the existing text hierarchy. Change only {需要修正的对象}. Reduce the whale-girl/tool if it blocks the text, restore readable text regions, and keep the character polished. Do not add extra characters, repeated whale motifs, invented numbers, watermark, signature or "by ian and 小黑".
+```
+
+## 生成前草稿
+
+```text
+模式：
 核心判断：
-鲸鱼娘动作：
-唯一隐喻：
-必要标签：
+必须保留的精确文字：
+鲸鱼娘参考图：
+鲸鱼娘作用与比例：
+构图：
+后期排版：
 ```
-
-如果这四行里出现多个判断、多个主角或超过 4 个必要标签，先回到 `visual-distillation.md`，不要直接生成。
