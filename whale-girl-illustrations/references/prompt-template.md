@@ -8,7 +8,10 @@
 Generate one standalone 3:4 vertical Chinese Xiaohongshu-style hand-drawn content illustration.
 
 Visual DNA:
-Very pale warm-white paper background, almost white. Deep navy slightly wobbly hand-drawn outer frame. Pale blue brush marks behind headings, handwritten underlines, a few speech bubbles, sparse blue doodles and only a few red/orange emphases. Refined hand-drawn Chinese content-page feeling with clear hierarchy and breathing room. One main topic and one visual anchor. In rich-information mode, allow 3-5 related hand-drawn content sections around the visual anchor. Do not make a rigid business PPT, dashboard or equal card grid.
+Very pale warm-white paper background, almost white. Deep navy slightly wobbly hand-drawn outer frame. Pale blue brush marks behind headings, handwritten underlines, a few speech bubbles, sparse blue doodles and only a few red/orange emphases. Refined hand-drawn Chinese content-page feeling with clear hierarchy and breathing room. One main topic, one visual anchor and one clear reading spine. In rich-information mode, place 3-5 related hand-drawn content sections along that shared reading spine. Do not scatter text around the character, and do not make a rigid business PPT, dashboard or equal card grid.
+
+Handwritten typography:
+Render Chinese text as clearly readable felt-tip-marker handwriting with slightly varied stroke width, subtly uneven baselines, natural rounded stroke endings and non-mechanical spacing. Keep headline, section headings and body in one coherent hand-drawn family with clear size hierarchy. Avoid geometric sans-serif, clean digital typesetting, perfectly straight baselines, smooth vector letters, formal calligraphy and childish scribbles. English project names and repository slugs are small secondary labels only.
 
 Recurring IP character required:
 Use the supplied whale-girl reference image as the identity reference. She is a refined chibi blue-haired whale girl with a white lace maid headband, side blue bow, whale-fin ears, navy-and-white maid dress, white apron and blue whale tail. Preserve her face, outfit, hair, fins and tail. She must perform one action connected to the topic, not stand beside the information as decoration. In rich-information mode, keep her usually around 25%-40% of the canvas so the text has room.
@@ -26,6 +29,9 @@ Theme:
 Structure type:
 {信息丰富单页 / 信息丰富系列页 / Workflow / 系统局部 / 前后对比 / 角色状态 / 概念隐喻 / 方法分层 / 地图路线 / 小漫画分镜}
 
+Reading spine:
+{从上到下的单轴编辑页 / 左侧文字右侧角色的双区编辑页 / 仅流程时从左到右；写明信息区 1→2→3→4→5 的顺序}
+
 Page or series context:
 {单页；或第几页、这一页只讲哪个独立小主题}
 
@@ -41,6 +47,9 @@ The main headline must be the first visual anchor and clearly larger than every 
 Content sections:
 {3-5 个信息区：每区的小标题、1-3 行短说明、需要强调的数字或关键词}
 
+Layout map:
+{标题区位置；信息区共享的左边线、编号轴或纸带；角色的固定动作区；底部收束区}
+
 Footer:
 {可选的一句结论、CTA、使用建议或页码}
 
@@ -48,10 +57,10 @@ Color use:
 Deep navy/black for line art, outer frame, main headings and structure. Blue for the whale-girl, small whales, state and feedback. Pale blue for brush marks, section underlines, bubbles and supporting areas. Red/orange only for a few key warnings, results or paths.
 
 Constraints:
-Strict 3:4 vertical canvas. Keep one main topic and one visual anchor. For rich-information mode, arrange 3-5 related sections with varied sizes and positions, leaving enough blank space between them. The whale-girl and any small whales must interact with the object or path. Use exact short Chinese text in separate readable blocks with clear hierarchy: headline, subtitle, section headings, short body lines, key numbers and optional footer. The headline must be noticed before the sections, but must not consume most of the upper canvas. Keep body text and the first section out of the quiet space around the headline. Use hand-drawn frames, blue under-brushes, bubbles and arrows selectively; do not put every sentence in an identical box.
+Strict 3:4 vertical canvas. Keep one main topic, one visual anchor and one traceable reading spine. For rich-information mode, arrange 3-5 related sections in a clear top-to-bottom order, using at most two columns. Make the sections share a left edge, numbered spine or continuous paper strip. They may vary slightly in size, but they must not float around the whale-girl. Keep the whale-girl inside one continuous lower or side action zone and let any small whales interact with the same object or path. Use exact short Chinese text in separate readable blocks with clear hierarchy: headline, subtitle, section headings, short body lines, key numbers and optional footer. The headline must be noticed before the sections, but must not consume most of the upper canvas. Keep body text and the first section out of the quiet space around the headline. Use one primary section-container language across the page. Use bubbles as a single accent and arrows only for a real process; do not combine torn notes, cards, clouds, ribbons and circular arrows as competing layout systems.
 
 Avoid:
-2:3, horizontal canvas, giant title taking over the page, tiny unreadable text wall, full article, long paragraphs, rigid equal boxes, rigid 3x3 grid, dashboard, formal flowchart, UI screenshot, commercial flat illustration, pure character poster, pure standing pose, generic blue girl without the reference identity, full-body sketch, repeated whale logos, plastic 3D, strong gradients, gray/yellow background, watermark, signature, QR code, "by ian and 小黑".
+2:3, horizontal canvas, giant title taking over the page, tiny unreadable text wall, full article, long paragraphs, text scattered in all four corners, zigzag reading order, sections surrounding the character, multiple container styles, decorative ribbon crossing content, meaningless circular arrows, rigid equal boxes, rigid 3x3 grid, dashboard, formal flowchart, UI screenshot, geometric sans-serif or clean digital typography, commercial flat illustration, pure character poster, pure standing pose, generic blue girl without the reference identity, full-body sketch, repeated whale logos, plastic 3D, strong gradients, gray/yellow background, watermark, signature, QR code, "by ian and 小黑".
 ```
 
 ## 生成前短草稿
@@ -61,6 +70,8 @@ Avoid:
 密度模式：简洁隐喻 / 信息丰富单页 / 信息丰富系列页
 页面主题（系列时填写）：
 标题与副标题：
+阅读脊柱与顺序：
+版面地图：
 视觉锚点：
 鲸鱼娘动作：
 小鲸鱼动作和数量：
