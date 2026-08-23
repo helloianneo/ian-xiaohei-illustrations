@@ -1,6 +1,6 @@
 interface:
   display_name: "鲸鱼娘手绘正文配图"
-  short_description: "生成严格 3:4 的信息丰富鲸鱼娘手绘配图"
-  default_prompt: "Use $whale-girl-illustrations 根据这段中文内容生成一张严格 3:4 竖版鲸鱼娘手绘内容页；项目介绍、工具推荐或方法论默认采用信息丰富模式，保留标题、副标题、3–5 个手绘信息区和可读短文案，同时让鲸鱼娘参与主题动作，并保留深蓝框线、淡蓝底纹、气泡和克制的蓝红橙配色。"
+  short_description: "生成严格 3:4 的鲸鱼娘小红书封面和信息页"
+  default_prompt: "Use $whale-girl-illustrations 根据这段内容生成严格 3:4 的鲸鱼娘小红书图片；需要系列时先做少字强标题封面，再做信息丰富的内容页，并让每张图的主标题成为第一视觉锚点。"
 policy:
   allow_implicit_invocation: true

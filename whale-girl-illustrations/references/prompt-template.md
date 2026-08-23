@@ -35,6 +35,9 @@ Visual anchor:
 Headline and subtitle:
 {用户提供的标题、副标题；没有就写一个短而具体的标题}
 
+Title hierarchy:
+The main headline must be the first visual anchor and clearly larger than every section heading. Reserve a distinct upper title zone, usually about 16%-24% of the canvas. Keep quiet space below the headline before the subtitle or first information section begins. Emphasize only one exact keyword using either red-orange text, a pale-blue brush backing, a slightly larger size, or a heavier weight. Keep project slugs, repository names and one-line descriptions visibly smaller than the main headline.
+
 Content sections:
 {3-5 个信息区：每区的小标题、1-3 行短说明、需要强调的数字或关键词}
 
@@ -45,7 +48,7 @@ Color use:
 Deep navy/black for line art, outer frame, main headings and structure. Blue for the whale-girl, small whales, state and feedback. Pale blue for brush marks, section underlines, bubbles and supporting areas. Red/orange only for a few key warnings, results or paths.
 
 Constraints:
-Strict 3:4 vertical canvas. Keep one main topic and one visual anchor. For rich-information mode, arrange 3-5 related sections with varied sizes and positions, leaving enough blank space between them. The whale-girl and any small whales must interact with the object or path. Use exact short Chinese text in separate readable blocks with clear hierarchy: headline, subtitle, section headings, short body lines, key numbers and optional footer. The headline may be prominent but must not consume most of the upper canvas. Use hand-drawn frames, blue under-brushes, bubbles and arrows selectively; do not put every sentence in an identical box.
+Strict 3:4 vertical canvas. Keep one main topic and one visual anchor. For rich-information mode, arrange 3-5 related sections with varied sizes and positions, leaving enough blank space between them. The whale-girl and any small whales must interact with the object or path. Use exact short Chinese text in separate readable blocks with clear hierarchy: headline, subtitle, section headings, short body lines, key numbers and optional footer. The headline must be noticed before the sections, but must not consume most of the upper canvas. Keep body text and the first section out of the quiet space around the headline. Use hand-drawn frames, blue under-brushes, bubbles and arrows selectively; do not put every sentence in an identical box.
 
 Avoid:
 2:3, horizontal canvas, giant title taking over the page, tiny unreadable text wall, full article, long paragraphs, rigid equal boxes, rigid 3x3 grid, dashboard, formal flowchart, UI screenshot, commercial flat illustration, pure character poster, pure standing pose, generic blue girl without the reference identity, full-body sketch, repeated whale logos, plastic 3D, strong gradients, gray/yellow background, watermark, signature, QR code, "by ian and 小黑".
