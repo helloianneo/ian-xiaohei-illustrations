@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ian Xiaohei Illustrations"
+  short_description: "Absurd, clean, hand-drawn Xiaohei in-article illustrations"
+  default_prompt: "Use $ian-xiaohei-illustrations to design and generate several Xiaohei-style absurd in-article illustrations for this article."
+policy:
+  allow_implicit_invocation: true
