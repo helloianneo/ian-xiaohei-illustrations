@@ -1,0 +1,6 @@
+interface:
+  display_name: "小柠正文配图"
+  short_description: "为中文文章生成清爽干练、有小柠IP的正文配图资产"
+  default_prompt: "Use $xiaoning-illustrations to 为这篇中文文章设计并生成几张小柠清爽正文配图。"
+policy:
+  allow_implicit_invocation: true

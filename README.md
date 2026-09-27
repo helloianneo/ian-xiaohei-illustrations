@@ -2,7 +2,7 @@
 
 > 把中文文章里的判断、流程、状态和隐喻，变成一张张白底、手绘、怪诞但清爽的正文配图。
 >
-> 16:9 横版 | 小黑 IP | 纯白手绘 | 少量红橙蓝中文批注 | Codex Skill
+> 16:9 横版 | 小黑 IP / 小柠 IP | 纯白手绘 | 少量中文批注 | Codex Skill
 
 ---
 
@@ -15,6 +15,8 @@ Ian Xiaohei Illustrations 是一个 Codex Skill，用来指导 AI Agent 为中�
 默认视觉 IP 是“小黑”：一个黑色实心、白点眼、细腿、空表情的小角色。小黑不是吉祥物，不是贴纸，也不是站在角落里的装饰物，而是正在认真参与系统运转的荒诞工作者。
 
 一句话：**让 AI 不只是“配一张图”，而是把文章里的一个关键认知动作画出来。**
+
+仓库现在也包含一个小柠 IP 扩展版：`xiaoning-illustrations/`。它保留正文配图、白底手绘、短标注和认知锚点的工作流，但把默认视觉 IP 换成“小柠 / Xiao Ning”：一位清爽、干练、亲和的程序员职场人物。
 
 ---
 
@@ -130,6 +132,18 @@ cp -R ./ian-xiaohei-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
 Use $ian-xiaohei-illustrations 为这篇中文文章设计并生成 5 张小黑怪诞正文配图。
 ```
 
+安装小柠版：
+
+```bash
+cp -R ./xiaoning-illustrations "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
+
+安装后，在 Codex 里使用：
+
+```text
+Use $xiaoning-illustrations 为这篇中文文章设计并生成 5 张小柠清爽正文配图。
+```
+
 ---
 
 ## 怎么用
@@ -158,6 +172,13 @@ Use $ian-xiaohei-illustrations 把下面这篇文章生成 4 张小黑怪诞正�
 ```text
 Use $ian-xiaohei-illustrations 为“信任不是喊出来的，而是一块证据一块证据铺过去”生成一张正文配图。
 画面要怪诞但清爽，小黑必须承担核心动作。
+```
+
+### 使用小柠 IP 生成正文配图
+
+```text
+Use $xiaoning-illustrations 为“产品开发流程：需求调研、竞品分析、方案设计、项目计划、开发跟踪、测试联调、验收上线发布”生成一张正文配图。
+画面要怪诞但清爽，小柠必须承担核心动作。
 ```
 
 ### 去掉图里的标题或错误文字
@@ -201,7 +222,7 @@ Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流�
 │   │   ├── 02-sort-by-purpose.png
 │   │   └── ...
 │   └── prompts.md
-└── ian-xiaohei-illustrations/
+├── ian-xiaohei-illustrations/
     ├── SKILL.md
     ├── agents/
     │   └── openai.yaml
@@ -213,12 +234,25 @@ Use $ian-xiaohei-illustrations 帮我编辑这张图，去掉左上角的“流�
         ├── composition-patterns.md
         ├── prompt-template.md
         └── qa-checklist.md
+└── xiaoning-illustrations/
+    ├── SKILL.md
+    ├── agents/
+    │   └── openai.yaml
+    ├── assets/
+    │   └── examples/
+    └── references/
+        ├── style-dna.md
+        ├── xiaoning-ip.md
+        ├── composition-patterns.md
+        ├── prompt-template.md
+        └── qa-checklist.md
 ```
 
 真正需要安装到 Codex 的是子目录：
 
 ```text
 ian-xiaohei-illustrations/
+xiaoning-illustrations/
 ```
 
 根目录的 README、LICENSE、NOTICE 和 examples 是 GitHub 分享文档。
