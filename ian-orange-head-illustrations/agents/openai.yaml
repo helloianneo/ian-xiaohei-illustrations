@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ian 橘子头配图"
+  short_description: "为中文文章生成橙色像素风、带橘子头IP的正文配图"
+  default_prompt: "Use $ian-orange-head-illustrations to 为这篇中文文章设计并生成几张橘子头像素正文配图。"
+policy:
+  allow_implicit_invocation: true
